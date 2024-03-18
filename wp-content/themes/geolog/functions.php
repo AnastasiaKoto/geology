@@ -17,3 +17,75 @@ add_filter( 'locale_stylesheet_uri', 'chld_thm_cfg_locale_css' );
 defined( 'CHLD_THM_CFG_IGNORE_PARENT' ) or define( 'CHLD_THM_CFG_IGNORE_PARENT', TRUE );
 
 // END ENQUEUE PARENT ACTION
+
+//подключаем стили и скрипты
+function all_styles() {
+	wp_enqueue_style('bootstrap-grid-css', '/wp-content/themes/geolog/assets/css/bootstrap-grid.css' );
+    wp_enqueue_style('bootstrap-reboot-css', '/wp-content/themes/geolog/assets/css/bootstrap-reboot.css' );
+    wp_enqueue_style('fancybox-css', '/wp-content/themes/geolog/assets/css/fancybox.css' );
+    wp_enqueue_style('swiper-bundle-css', '/wp-content/themes/geolog/assets/css/swiper-bundle.min.css' );
+    wp_enqueue_style('swiper-css', '/wp-content/themes/geolog/assets/css/swiper.min.css' );
+    wp_enqueue_style('style-css', '/wp-content/themes/geolog/assets/css/style.css' );
+    wp_enqueue_style('service-css', '/wp-content/themes/geolog/assets/css/service.css' );
+}
+function all_js() {
+    wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.7.1.min.js');
+    wp_enqueue_script('mask', 'https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js', array('jquery'), '1.0', true);
+    wp_enqueue_script('fancybox-js', '/wp-content/themes/geolog/assets/js/fancybox.umd.js', array('jquery'), '1.0', true);
+    wp_enqueue_script('swiper-bundle-js', '/wp-content/themes/geolog/assets/js/swiper-bundle.min.js', array('jquery'), '1.0', true);
+    wp_enqueue_script('main-js', '/wp-content/themes/geolog/assets/js/main.js', array('jquery'), '1.0', true);
+}
+add_action('wp_enqueue_scripts', 'all_styles');
+add_action('wp_enqueue_scripts', 'all_js');
+
+//меню
+add_action( 'after_setup_theme', 'theme_register_nav_header_top_menu' );
+
+function theme_register_nav_header_top_menu() {
+	register_nav_menu( 'header', 'Header Top Menu');
+}
+
+add_action( 'after_setup_theme', 'theme_register_nav_header_cats_menu' );
+
+function theme_register_nav_header_cats_menu() {
+	register_nav_menu( 'header-cats', 'Header Cats Menu');
+}
+
+//добавляем класс из верстки
+
+function add_active_class_to_menu_item($classes, $item) {
+    if (in_array('current-menu-item', $classes)) {
+        $classes[] = 'header-nav_active';
+    }
+    return $classes;
+}
+add_filter('nav_menu_css_class', 'add_active_class_to_menu_item', 10, 2);
+
+//добавляем обертку выпадашки
+
+class Custom_Walker_Nav_Menu extends Walker_Nav_Menu {
+    function start_lvl( &$output, $depth = 0, $args = array() ) {
+      $output .= '<ul>';
+    }
+  
+    function end_lvl( &$output, $depth = 0, $args = array() ) {
+      $output .= '</ul>';
+    }
+  
+    function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
+      $output .= '<li><a href="' . $item->url . '">' . $item->title . '</a>';
+      if (in_array('menu-item-has-children', $item->classes)) {
+        $output .= '<div class="dropdown-menu dropdown-menu_header-bottom"><span class="dropdown-menu_header-bottom__title">' . $item->title . '</span>';
+      }
+    }
+  
+    function end_el( &$output, $item, $depth = 0, $args = array() ) {
+      if (in_array('menu-item-has-children', $item->classes)) {
+        $output .= '</div>';
+      }
+      $output .= '</li>';
+    }
+}  
+
+//подключаем файлы
+require __DIR__ . '/include/all_forms.php';
