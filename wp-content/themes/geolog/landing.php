@@ -27,72 +27,9 @@ get_header();
 </section>-->
 <!-- Begin content-->
 <div class="content">
-    <?php 
-    if( have_rows('banner') ):
-        while( have_rows('banner') ): the_row();
-            $banner_back = get_sub_field('background');
-            $banner_descr = get_sub_field('descr');
-            $utps = get_sub_field('utps');
-    ?>
-            <section style="background-image: url(<?php echo $banner_back; ?>);" class="section-main-banner">
-                <div class="container">
-                    <div class="section-main-banner__row">
-                        <div class="section-main-banner__col ">
-                            <div class="section-main-banner__desc">
-                                <h1><?php the_title(); ?></h1>
-                                <p><?php echo $banner_descr; ?></p>
-                            </div>
-                            <div class="section-main-banner__buttons">
-                                <a href="#modal-form" class="banner-btn trigger-fancy">Заказать услугу </a>
-                            </div>
-                        </div>
-
-                        <div class="section-main-banner__col  ">
-                            <?php 
-                            if($utps) {
-                            ?>
-                                <div class="section-main-banner-adv main-banner-slider swiper">
-                                    <div class="swiper-wrapper ">
-                                        <?php 
-                                        $count = 1;
-                                        $all = count($utps);
-                                        foreach($utps as $utp) {
-                                        ?>
-                                        <!-- item-->
-                                            <div
-                                                class="section-main-banner-adv__item section-main-banner-adv-item swiper-slide">
-                                                <div class="section-main-banner-adv-item__counter">
-                                                    <span><?php echo $count; ?></span> <span>/</span> <span> <?php echo $all; ?></span>
-
-                                                </div>
-                                                <div class="section-main-banner-adv-item__title">
-                                                    <?php echo $utp->post_title; ?>
-                                                </div>
-                                                <div class="section-main-banner-adv-item__text">
-                                                    <p>
-                                                        <?php echo $utp->post_content; ?>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        <?php
-                                        $count++;
-                                        }
-                                        ?>
-                                    </div>
-                                </div>
-                            <?php
-                            } 
-                            ?>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-            <!-- end banner-->
-    <?php 
-       endwhile;
-    endif;
-    ?>
+    <!-- banner -->
+    <?php get_template_part('templates/banner');  ?>
+    <!-- end banner-->
     <?php 
     $args = array(
         'post_type'      => 'services',
@@ -281,29 +218,13 @@ get_header();
             <div class="section-message__wrap">
                 <?php 
                 $article1 = get_field('mini-article1');
-                if($article1) {
-                ?>
-                    <div class="message">
-                        <h3 class="message-title_long"><?php echo $article1->post_title; ?></h3>
-                        <?php 
-                            echo $article1->post_content;
-                        ?>
-                    </div>
-                <?php
-                }
+                set_query_var( 'article', $article1 );
+                get_template_part('templates/mini', 'article'); 
                 ?>
                 <?php 
                 $article2 = get_field('mini-article2');
-                if($article2) {
-                ?>
-                    <div class="message">
-                        <h3 class="message-title_long"><?php echo $article2->post_title; ?></h3>
-                        <?php 
-                            echo $article2->post_content;
-                        ?>
-                    </div>
-                <?php
-                }
+                set_query_var( 'article', $article2 );
+                get_template_part('templates/mini', 'article');
                 ?>
 
             </div>
@@ -311,49 +232,12 @@ get_header();
 
         </div>
     </section>
-    <?php
-    $workers = get_field('workers');
-    if($workers) {
-    ?>
-        <!--employers -->
-        <section class="section-emp">
-            <div class="container">
-                <div class="section-employers-row employers-slider swiper">
-                    <div class="swiper-wrapper">
-                        <?php
-                        foreach($workers as $worker) {
-                            $worker_id = $worker->ID;
-                        ?>
-                            <!--item-->
-                            <div class="section-employers__item section-employers-item  swiper-slide">
-                                <div class="section-employers-item__image">
-                                    <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($worker_id)); ?>" alt="">
-                                </div>
-
-                                <div class="section-employers-item__pos">
-                                    <?php 
-                                    echo $worker->post_title;
-                                    ?>
-                                </div>
-
-                                <div class="section-employers-item__name">
-                                    <?php echo get_field('worker_name', $worker_id); ?>
-                                </div>
-
-                                <div class="section-employers-item__btn">
-                                    <a class="site-btn-2 site-btn-2_emp" href="#callback">Отправить заявку </a>
-                                </div>
-                            </div>
-                        <?php
-                        }
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </section>
-    <?php
-    }
-    ?>
+    <!--employers -->
+    <section class="section-emp">
+        <div class="container">
+            <?php get_template_part('templates/workers'); ?>
+        </div>
+    </section>
     <?php
     $types = get_field('service_types');
     if($types) {
@@ -539,7 +423,7 @@ get_header();
             ?>
             <div class="section-prices-loaded-block">
                 <?php 
-                $geo_files = get_field('geolog_files', 'option');
+                $geo_files = get_field('geolog_files');
                 if($geo_files) {
                 ?>
                 <div class="section-prices-loaded-block__load-btns">
@@ -621,22 +505,16 @@ get_header();
         </div>
     </section>
 
-    <?php
-    $mini_article3 = get_field('mini-article3');
-    if($mini_article3) {
-    ?>
-        <!-- section reseach grunt-->
-        <section class="section-researc-grunt">
-            <div class="container">
-                <div class="message">
-                    <h3><?php echo $mini_article3->post_title; ?></h3>
-                    <?php echo $mini_article3->post_content; ?>
-                </div>
-            </div>
-        </section>
-    <?php
-    }
-    ?>
+    <!-- section reseach grunt-->
+    <section class="section-researc-grunt">
+        <div class="container">
+            <?php 
+            $article3 = get_field('mini-article3');
+            set_query_var( 'article', $article3 );
+            get_template_part('templates/mini', 'article'); 
+            ?>
+        </div>
+    </section>
     <?php 
     $tech_tasks = get_field('tex_files', 'option');
     if($tech_tasks) {
@@ -699,22 +577,16 @@ get_header();
     <?php
     }
     ?>
-    <?php 
-    $mini_article4 = get_field('mini-article4');
-    if($mini_article4) {
-    ?>
-        <!-- garanty-->
-        <section class="section-garanty">
-            <div class="container">
-                <div class="message">
-                    <h3 class="message-title"><?php echo $mini_article4->post_title; ?></h3>
-                    <?php echo $mini_article4->post_content; ?>
-                </div>
-            </div>
-        </section>
-    <?php
-    }
-    ?>
+    <!-- garanty-->
+    <section class="section-garanty">
+        <div class="container">
+            <?php 
+            $article4 = get_field('mini-article4');
+            set_query_var( 'article', $article4 );
+            get_template_part('templates/mini', 'article'); 
+            ?>
+        </div>
+    </section>
     <!-- condition payment-->
     <section class="section-condition-payment">
         <div class="container">
