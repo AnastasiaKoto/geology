@@ -155,63 +155,16 @@ get_header();
     <?php
     } 
     ?>
-    <?php 
-    $args = array(
-        'post_type'      => 'machines',
-        'post_status'    => 'publish',
-        'posts_per_page' => -1,
-    );
-
-    $machines = new WP_Query($args);
-    if ($machines->have_posts()) {
-    ?>
     <!-- requpment -->
-        <section class="section-equipment">
-            <div class="container">
-                <div class="section-equipment__inner">
-                    <h2 class="section-equipment__title">Наше оборудование</h2>
-                    <div class="section-equipment-row swiper equipment-slider ">
-                        <div class="swiper-wrapper">
-                            <?php
-                            while ($machines->have_posts()) {
-                                $machines->the_post();
-                                $machine_img = wp_get_attachment_url(get_post_thumbnail_id(get_the_ID()));
-                            ?>
-                                <!--item-->
-                                <div class="section-equipment-item swiper-slide">
-                                    <div class="section-equipment-item__image">
-                                        <img src="<?php echo $machine_img; ?>" alt="">
-                                    </div>
-                                    <div class="section-equipment-item__title">
-                                        <?php the_title(); ?>
-                                    </div>
-                                    <div class="section-equipment-item__text">
-                                        <?php the_content(); ?>
-                                    </div>
-                                </div>
-                            <?php 
-                            }
-                            ?>
-                        </div>
-
-                        <div class="swiper-pagination slider-pagination"></div>
-                    </div>
-
-
-                    <div class="section-equipment-all">
-                        <a class="site-btn-2 site-btn-2_eqiupment" href="javascript:void(0)">Смотреть все
-                            оборудование</a>
-                    </div>
-
-
-                </div>
+    <section class="section-equipment">
+        <div class="container">
+            <div class="section-equipment__inner">
+                <h2 class="section-equipment__title">Наше оборудование</h2>
+                <?php get_template_part('templates/machines');  ?>
             </div>
-        </section>
-        <!-- end equpment-->
-    <?php
-    }
-    wp_reset_postdata();
-    ?>
+        </div>
+    </section>
+    <!-- end equpment-->
     <!--messages-->
     <section class="section-messages">
         <div class="container">

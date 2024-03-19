@@ -277,127 +277,41 @@ if($examples) {
 <?php 
 }
 ?>
-<!-- example work-->
-<section class="section-example-works">
-    <div class="container">
-        <h2 class="section-example-reports__title"> Примеры работ</h2>
-        <div class="work-slider__wrapper">
-            <div class="works-slider swiper">
-                <div class="swiper-wrapper">
-                    <!--item-->
-                    <div class="work-slider__item swiper-slide">
-                        <div class="work-slider__image">
-                            <img src="./assets/images/portfolio1.png" alt="">
-                        </div>
+<?php 
+$works_gallery = get_field('work_gallery', 'option');
+if($works_gallery) {
+?>
+    <!-- example work-->
+    <section class="section-example-works">
+        <div class="container">
+            <h2 class="section-example-reports__title"> Примеры работ</h2>
+            <div class="work-slider__wrapper">
+                <div class="works-slider swiper">
+                    <div class="swiper-wrapper">
+                        <?php foreach($works_gallery as $image) { ?>
+                            <!--item-->
+                            <div class="work-slider__item swiper-slide">
+                                <div class="work-slider__image">
+                                    <img src="<?php echo $image; ?>" alt="">
+                                </div>
+                            </div>
+                        <?php } ?>
                     </div>
-
-                    <!--item-->
-                    <div class="work-slider__item swiper-slide">
-                        <div class="work-slider__image">
-                            <img src="./assets/images/portfolio1.png" alt="">
-                        </div>
-                    </div>
-
-
-                    <!--item-->
-                    <div class="work-slider__item swiper-slide">
-                        <div class="work-slider__image">
-                            <img src="./assets/images/finish-service.png" alt="">
-                        </div>
-                    </div>
-
                 </div>
             </div>
+            <div class="section-example-works__button">
+                <a class="site-btn-2 site-btn-2_eqiupment" href="javascript:void(0)">Смотреть все
+                    работы</a>
+            </div>
         </div>
-        <div class="section-example-works__button">
-            <a class="site-btn-2 site-btn-2_eqiupment" href="javascript:void(0)">Смотреть все
-                работы</a>
-        </div>
-    </div>
-</section>
-
+    </section>
+<?php } ?>
 <!-- requpment -->
 <section class="section-equipment section-equipment_service">
     <div class="container">
         <div class="section-equipment__inner">
             <h2 class="section-equipment__title">Наше оборудование</h2>
-            <div class="section-equipment-row swiper equipment-slider ">
-                <div class="swiper-wrapper">
-                    <!--item-->
-                    <div class="section-equipment-item swiper-slide">
-                        <div class="section-equipment-item__image">
-                            <img src="./assets/images/ex1.png" alt="">
-                        </div>
-                        <div class="section-equipment-item__title">
-                            Малогабаритная установка УКБ-12/25
-                        </div>
-                        <div class="section-equipment-item__text">
-                            Малогабаритная легкоперевозимая установка УКБ-12/25 предназначена для бурения
-                            скважин глубиной до 15 м шнековым способом и до 25 м твердосплавными коронками с
-                            промывкой в труднодоступных или стесненных условиях.
-                        </div>
-                    </div>
-
-
-                    <!--item-->
-                    <div class="section-equipment-item swiper-slide">
-                        <div class="section-equipment-item__image">
-                            <img src="./assets/images/ex2.png" alt="">
-                        </div>
-                        <div class="section-equipment-item__title">
-                            Агрегат вибрационного бурения АВБ-2М
-                        </div>
-                        <div class="section-equipment-item__text">
-                            Агрегат вибрационного бурения АВБ-2М предназначен для бурения:вертикальных
-                            скважин
-                            вибрационным методом в породах I-IV категорий при инженерных изысканиях,скважин
-                            ударно-канатным методом в породах до VII категории
-                        </div>
-                    </div>
-
-                    <!--item-->
-                    <div class="section-equipment-item swiper-slide">
-                        <div class="section-equipment-item__image">
-                            <img src="./assets/images/ex3.png" alt="">
-                        </div>
-                        <div class="section-equipment-item__title">
-                            Буровая установка ПБУ-50
-                        </div>
-                        <div class="section-equipment-item__text">
-                            Буровая установка ПБУ—50 используется при:проведении инженерно—геологических
-                            или
-                            технических изысканий,бурении скважин при сейсморазведке,бурении
-                            инженерно—геологических скважин.
-                        </div>
-                    </div>
-
-                    <!--item-->
-                    <div class="section-equipment-item swiper-slide">
-                        <div class="section-equipment-item__image">
-                            <img src="./assets/images/ex3.png" alt="">
-                        </div>
-                        <div class="section-equipment-item__title">
-                            Буровая установка ПБУ-50
-                        </div>
-                        <div class="section-equipment-item__text">
-                            Буровая установка ПБУ—50 используется при:проведении инженерно—геологических
-                            или
-                            технических изысканий,бурении скважин при сейсморазведке,бурении
-                            инженерно—геологических скважин.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-pagination slider-pagination"></div>
-            </div>
-
-
-            <div class="section-equipment-all">
-                <a class="site-btn-2 site-btn-2_eqiupment" href="javascript:void(0)">Смотреть все
-                    оборудование</a>
-            </div>
-
-
+            <?php get_template_part('templates/machines');  ?>
         </div>
     </div>
 </section>
