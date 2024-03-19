@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./assets/css/fancybox.css">
 
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!--service-->
+    <link rel="stylesheet" href="./assets/css/service.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
@@ -196,10 +198,11 @@
                                                     <li><a href="javascript:void(0)">Москва</a></li>
                                                     <li><a href="javascript:void(0)">Москва</a></li>
                                                 </ul>
-                                              
-                                                
+
+
                                             </div>
-                                            <a class="mobile-menu__phone" href="tel:+79916080956"> +7 (991) 608-09-56</a>
+                                            <a class="mobile-menu__phone" href="tel:+79916080956"> +7 (991)
+                                                608-09-56</a>
 
                                             <div class="mobile-menu__socials">
                                                 <div>
@@ -312,7 +315,11 @@
         <!--end header-->
         <!-- Begin content-->
         <div class="content">
-            <section class="section-main-banner">
+
+            <!--service-banner-->
+
+            <section class="section-main-banner"
+                style="background:url('./assets/images/service.png' ) no-repeat ;background-size: cover;">
                 <div class="container">
                     <div class="section-main-banner__row">
                         <div class="section-main-banner__col ">
@@ -455,355 +462,31 @@
             </section>
             <!-- end banner-->
 
-            <!-- services -->
-            <section class="section-services">
-                <div class="container">
-                    <div class="section-services__inner">
-                        <h2 class="section-services__title">Наши услуги</h2>
-                        <div class="section-services-row__wrap">
-                            <div class="section-services-row ">
-                                <a href="javascript:void(0)" class="section-services-row__item">
-                                    Геодезические изыскания
-
-
-                                    <a href="javascript:void(0)" class="section-services-row__item">
-                                        Экологические изыскания
-                                    </a>
-
-                                    <a href="javascript:void(0)" class="section-services-row__item">
-                                        Геофизические изыскания
-                                    </a>
-
-                                    <a href="javascript:void(0)" class="section-services-row__item">
-                                        Исследование грунта
-                                    </a>
-
-                                    <a href="javascript:void(0)" class="section-services-row__item">
-                                        Геология земельного участка
-                                    </a>
-                                    <a href="javascript:void(0)" class="section-services-row__item">
-                                        Обследование зданий и сооружений
-                                    </a>
-                                    <a href="javascript:void(0)" class="section-services-row__item">
-                                        Топографическая съемка
-                                    </a>
-                                    <a href="javascript:void(0)" class="section-services-row__item">
-                                        Стоимость топографической съемки земельного участка
-                                    </a>
-                                    <a href="javascript:void(0)" class="section-services-row__item">
-                                        Топосъемка для ГПЗУ
-                                    </a>
-                                    <a href="javascript:void(0)" class="section-services-row__item">
-                                        Грунтовая лаборатория
-                                    </a>
-                                    <a href="javascript:void(0)" class="section-services-row__item">
-                                        Зондирование
-                                    </a>
-                                    <a href="javascript:void(0)" class="section-services-row__item">
-                                        Разработка ПМ ООС
-                                    </a>
-                                    <a href="javascript:void(0)" class="section-services-row__item">
-                                        Гидрогеологическое заключение
-                                    </a>
-                                    <a href="javascript:void(0)" class="section-services-row__item">
-                                        Гидрометеорологические изыскания
-                                    </a>
-
-                                    <a href="javascript:void(0)" class="section-services-row__item">
-                                        Геодезия земельного участка
-                                    </a>
-
-                                    <a href="javascript:void(0)" class="section-services-row__item">
-                                        Вынос в натуру
-                                    </a>
-                                    <a href="javascript:void(0)" class="section-services-row__item">
-                                        Геоподоснова
-                                    </a>
-                                    <a href="javascript:void(0)" class="section-services-row__item">
-                                        Ситуационный план земельного участка
-                                    </a>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-
-            <!-- end services-->
-
-            <!-- begin callback-->
-            <section class="section-form" id="callback">
-                <div class="container">
-                    <div class="callback-form">
-                        <div class="callback-form__desc">
-                            <h2 class="callback-form__title">Оставьте заявку</h2>
-                            <p> и получите бесплатную консультацию специалиста</p>
-                        </div>
-                        <form method="post" action="/">
-                            <div class="callback-form__inputs">
-                                <div class="callback-form__input">
-                                    <input type="text" name="name" placeholder="Имя">
-                                </div>
-
-                                <div class="callback-form__input">
-                                    <input type="text" name="phone" placeholder="+7 (___) ___-__-__">
-                                </div>
-
-                                <div class="callback-form__input">
-                                    <input value="Оставить заявку" type="submit" class="site-btn-2 callback-form__btn">
-                                </div>
-
-                                <div class="callback-form__input  callback-form__checkbox">
-                                    <input id="political" type="checkbox" checked>
-                                    <label for="political"></label>
-                                    <p>Нажимая на кнопку, Вы соглашаетесь с <a href="javascript:void(0)"> Политикой
-                                            конфиденциальности </a></p>
-                                </div>
-
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </section>
-            <!-- section advantages-->
-            <section class="section-advantages">
-                <div class="container">
-                    <div class="section-advantages__inner">
-                        <h2 class="section-advantages__title"> Преимущества геологических изысканий
-                            с компанией «Геолог-Краснодар»</h2>
-                        <div class="section-advantages-row advantages-slider swiper">
-                            <div class="swiper-wrapper">
-                                <!--item-->
-                                <div class="section-advantages-row__item section-advantages-row-item swiper-slide">
-                                    <span class="section-advantages-row-item__accent"> Собственный парк
-                                    </span>современного
-                                    оборудования и буровой техники, а также полный комплект профессионального
-                                    инструмента
-                                    для
-                                    инженерно-геологических изысканий
-                                </div>
-
-                                <!--item-->
-                                <div class="section-advantages-row__item section-advantages-row-item swiper-slide">
-                                    <span class="section-advantages-row-item__accent">Наличие лаборатории грунтов</span>
-                                    ,
-                                    позволяющей проводить любые исследования в области геологии для строительства, как в
-                                    Краснодарском крае, так и за его пределами
-                                </div>
-
-                                <!--item-->
-                                <div class="section-advantages-row__item section-advantages-row-item swiper-slide">
-                                    выполнение изыскательских работ на основании действующих <span
-                                        class="section-advantages-row-item__accent"> лицензий
-                                        и допусков СРО </span>
-                                </div>
-
-                                <!--item-->
-                                <div class="section-advantages-row__item section-advantages-row-item swiper-slide">
-                                    <span class="section-advantages-row-item__accent">
-                                        высокий уровень компетенции всех специалистов,</span> состоящих
-                                    в штате центра инженерных изысканий «Геолог-Краснодар»
-                                </div>
-
-                                <!--item-->
-                                <div class="section-advantages-row__item section-advantages-row-item swiper-slide">
-                                    <span class="section-advantages-row-item__accent">
-                                        высокий уровень компетенции всех специалистов,</span> состоящих
-                                    в штате центра инженерных изысканий «Геолог-Краснодар»
-                                </div>
-                            </div>
-
-                            <div class="swiper-pagination slider-pagination slider-pagination__adv"></div>
-
-                        </div>
-
-                        <div class="section-advantages__call section-advantages-call ">
-                            <div class="section-advantages-call__name">
-                                Заказать геологические изыскания:
-                            </div>
-                            <a href="tel:89916080956">8 (991) 608-09-56 </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Information-->
-            <section class="section-information">
-                <div class="container">
-                    <div class="section-information__inner">
-                        <h2 class="section-information__title"> Информация</h2>
-                        <div class="section-information__row">
-                            <!--item-->
-                            <a href="javascript:void(0)" class="section-information__item section-information-item">
-                                <div class="section-information-item__image">
-                                    <img src="./assets/images/info1.png">
-                                </div>
-                                <div class="section-information-item__name">Методы изысканий</div>
-                            </a>
-
-                            <!--item-->
-                            <a href="javascript:void(0)" class="section-information__item section-information-item">
-                                <div class="section-information-item__image">
-                                    <img src="./assets/images/info2.png">
-                                </div>
-                                <div class="section-information-item__name">Термины геологии</div>
-                            </a>
-
-
-                            <!--item-->
-                            <a href="javascript:void(0)" class="section-information__item section-information-item">
-                                <div class="section-information-item__image">
-                                    <img src="./assets/images/info3.png">
-                                </div>
-                                <div class="section-information-item__name">Рекомендации
-                                    по фундаменту</div>
-                            </a>
-
-                            <!--item-->
-                            <a href="javascript:void(0)" class="section-information__item section-information-item">
-                                <div class="section-information-item__image">
-                                    <img src="./assets/images/info4.png">
-                                </div>
-                                <div class="section-information-item__name">Техническое задание</div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- requpment -->
-            <section class="section-equipment">
-                <div class="container">
-                    <div class="section-equipment__inner">
-                        <h2 class="section-equipment__title">Наше оборудование</h2>
-                        <div class="section-equipment-row swiper equipment-slider ">
-                            <div class="swiper-wrapper">
-                                <!--item-->
-                                <div class="section-equipment-item swiper-slide">
-                                    <div class="section-equipment-item__image">
-                                        <img src="./assets/images/ex1.png" alt="">
-                                    </div>
-                                    <div class="section-equipment-item__title">
-                                        Малогабаритная установка УКБ-12/25
-                                    </div>
-                                    <div class="section-equipment-item__text">
-                                        Малогабаритная легкоперевозимая установка УКБ-12/25 предназначена для бурения
-                                        скважин глубиной до 15 м шнековым способом и до 25 м твердосплавными коронками с
-                                        промывкой в труднодоступных или стесненных условиях.
-                                    </div>
-                                </div>
-
-
-                                <!--item-->
-                                <div class="section-equipment-item swiper-slide">
-                                    <div class="section-equipment-item__image">
-                                        <img src="./assets/images/ex2.png" alt="">
-                                    </div>
-                                    <div class="section-equipment-item__title">
-                                        Агрегат вибрационного бурения АВБ-2М
-                                    </div>
-                                    <div class="section-equipment-item__text">
-                                        Агрегат вибрационного бурения АВБ-2М предназначен для бурения:вертикальных
-                                        скважин
-                                        вибрационным методом в породах I-IV категорий при инженерных изысканиях,скважин
-                                        ударно-канатным методом в породах до VII категории
-                                    </div>
-                                </div>
-
-                                <!--item-->
-                                <div class="section-equipment-item swiper-slide">
-                                    <div class="section-equipment-item__image">
-                                        <img src="./assets/images/ex3.png" alt="">
-                                    </div>
-                                    <div class="section-equipment-item__title">
-                                        Буровая установка ПБУ-50
-                                    </div>
-                                    <div class="section-equipment-item__text">
-                                        Буровая установка ПБУ—50 используется при:проведении инженерно—геологических
-                                        или
-                                        технических изысканий,бурении скважин при сейсморазведке,бурении
-                                        инженерно—геологических скважин.
-                                    </div>
-                                </div>
-
-                                <!--item-->
-                                <div class="section-equipment-item swiper-slide">
-                                    <div class="section-equipment-item__image">
-                                        <img src="./assets/images/ex3.png" alt="">
-                                    </div>
-                                    <div class="section-equipment-item__title">
-                                        Буровая установка ПБУ-50
-                                    </div>
-                                    <div class="section-equipment-item__text">
-                                        Буровая установка ПБУ—50 используется при:проведении инженерно—геологических
-                                        или
-                                        технических изысканий,бурении скважин при сейсморазведке,бурении
-                                        инженерно—геологических скважин.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-pagination slider-pagination"></div>
-                        </div>
-
-
-                        <div class="section-equipment-all">
-                            <a class="site-btn-2 site-btn-2_eqiupment" href="javascript:void(0)">Смотреть все
-                                оборудование</a>
-                        </div>
-
-
-                    </div>
-                </div>
-            </section>
-            <!-- end equpment-->
-
             <!--messages-->
-            <section class="section-messages">
+            <section class="section-messages section-messages_services">
                 <div class="container">
                     <div class="section-message__wrap">
                         <div class="message">
-                            <h3 class="message-title_long"> Инженерно-геологические изыскания для строительства и
-                                проектирования</h3>
-                            <p>Выполнение всеобъемлющих комплексных инженерных изысканий, в том числе в области геологии
-                                — это приоритетное направление деятельности многопрофильной компании «Геолог-Краснодар».
-                                Наша организация была основана в 2003 году. К настоящему моменту мы успешно реализовали
-                                свыше 1000 крупных проектов, связанных с производством инженерных изысканий по геологии
-                                в Краснодаре, Краснодарском крае, а также в других регионах РФ.</p>
-
-                            <p>Скрупулезно относясь к своим обязанностям, мы не только определяем природные условия, но
-                                и прогнозируем их изменения
-                                в период строительства и эксплуатации зданий или инженерных сооружений. При этом важно
-                                отметить, что весь комплекс работ, выполняемых в составе инженерных изысканий для
-                                строительства, строго соответствует как территориальным, так и федеральным нормам. </p>
-
-                        </div>
-
-                        <div class="message">
-                            <h3> Профессиональные геологические изыскания в Краснодаре</h3>
-                            <p>Проведение инженерных изысканий по геологии — обязательный этап подготовки территории, на
-                                которой планируется возведение или реконструкция объекта. Данный термин подразумевает
-                                выполнение целого комплекса процедур, которые необходимы для ознакомления с фактическими
-                                природными условиями. В процессе инженерно-геологической съемки и обследования
-                                конкретного участка местности, учитываются все параметры, способные непосредственно
-                                повлиять на результаты строительных или реконструкционных работ.</p>
-                            <p>Инженерные изыскания позволяют получить максимально полную информацию, необходимую для
-                                грамотного проектирования объекта. К примеру, с помощью комплексного исследования можно
-                                узнать:</p>
-                            <ul>
-                                <li> особенности окружающей среды; </li>
-                                <li> степень влияния строительства на состояние местности;</li>
-                                <li> прогноз возможных изменений и т.д.</li>
-                            </ul>
-                            <p>Специализируясь на выполнении инженерных изысканий в течение полутора десятилетий, ООО
-                                «Геолог-Краснодар» оказывает качественные услуги по изучению геологии. Наша организация
-                                работает как с частными лицами, так и с компаниями Краснодара и Краснодарского края. При
-                                этом мы не только на самом высоком уровне выполняем инженерно-геологические изыскания,
-                                но и предлагаем каждому клиенту выгодные условия сотрудничества. Воспользовавшись нашими
-                                услугами, вы в кратчайшие сроки получите достоверную информацию, необходимую для
-                                проектирования и строительства линейных или площадных объектов.</p>
-
+                            <h3 class="message-title">Инженерно-геодезические изыскания в Краснодаре</h3>
+                            <div>
+                                <p> Теплый климат, близость курортных районов, транспортная доступность, сравнительно
+                                    невысокие цены на жилье — эти и другие факторы делают Краснодар привлекательным для
+                                    многих тысяч людей. Поэтому нет ничего удивительного в том, что в последнее
+                                    десятилетие
+                                    город и край переживают настоящий строительный бум. Здесь возводятся многоквартирные
+                                    дома, коммерческая недвижимость, объекты социальной инфраструктуры и, конечно,
+                                    активно
+                                    ведется малоэтажное строительство. Это обуславливает высокую востребованность
+                                    инженерно-геодезических изысканий</p>
+                                <p> Планируете исследования по геодезии? Воспользуйтесь услугами ООО «Геолог-Краснодар».
+                                    Наша компания вышла на рынок в 2003 году и к настоящему времени реализовала
+                                    несколько
+                                    тысяч проектов, в том числе связанных с инженерно-геодезическими изысканиями для
+                                    проектирования и строительства. На практике доказав высокий уровень обслуживания, мы
+                                    приобрели репутацию надежного и профессионального подрядчика, гарантирующего
+                                    качество
+                                    работ. </p>
+                            </div>
                         </div>
 
                     </div>
@@ -812,8 +495,9 @@
                 </div>
             </section>
 
+
             <!--employers -->
-            <section class="section-emp">
+            <section class="section-emp section-emp_service">
                 <div class="container">
                     <div class="section-employers-row employers-slider swiper">
                         <div class="swiper-wrapper">
@@ -900,214 +584,76 @@
                 </div>
             </section>
 
-            <!-- Group research-->
-            <section class="section-reseach">
+
+            <!--messages-->
+            <section class="section-messages section-messages-service">
                 <div class="container">
-                    <div class="section-reseach__inner">
-                        <h2 class="section-reseach__title"> Виды инженерных изысканий</h2>
-                        <p class="section-reseach__desc">Компания «Геолог-Краснодар» предлагает заказать разработку
-                            ситуационного плана с описанием фактического состояния изучаемой территории. В зависимости
-                            от потребностей клиента в программу инженерных изысканий могут входить <span
-                                class="section-reseach__desc_accent">такие работы, как:</span> </p>
+                    <div class="section-message__wrap">
 
-                        <div class="section-reseach-row research-slider swiper">
-                            <div class="swiper-wrapper">
+                        <div class="message">
+                            <h3> Профессиональные геологические изыскания в Краснодаре</h3>
+                            <div>
+                                <p>
+                                    Рельеф местности, перепад высот, площадь участка, наличие на территории
+                                    искусственных
+                                    либо природных объектов влияют как на выбор проектных решений, так и на итоговую
+                                    стоимость строительства. Этот факт объясняет необходимость проведения
+                                    инженерно-геодезических изысканий. Последние представляют собой комплекс
+                                    исследований,
+                                    направленных на измерение и изучение того или иного участка. Итогом геодезических
+                                    работ
+                                    становятся подробные планы, схемы и карты с отметками расстояний, а также
+                                    горизонтальных
+                                    и вертикальных углов.
+                                </p>
+                                <p>Технический отчет о геодезических изысканиях содержит как графическую, так и
+                                    текстовую
+                                    информацию о местности и используется на всех стадиях проектно-строительных работ.
+                                </p>
+                            </div>
+                            <div class="section-messages-service__stages">
                                 <!--item-->
-                                <div class="section-reseach__item section-reseach-item  swiper-slide">
-                                    <div class="section-reseach-item__image">
-                                        <img src="./assets/images/res1.png" alt="">
-                                    </div>
-                                    <div class="section-reseach-item__body">
-                                        <a href="javascript:void(0)"
-                                            class="section-reseach-item__title">Инженерно-геодезическим изыскания</a>
-                                        <div class="section-reseach-item__text">включающие в себя топографическую съемку
-                                            с
-                                            последующим определением оптимального расположения объекта строительства.
-                                        </div>
-
-
-                                    </div>
-                                    <div class="section-reseach-item__mobile-link">
-                                        <a href="javascript:void(0)">
-                                            Подробнее об услуге</a>
-                                    </div>
-                                </div>
-
-
-                                <!--item-->
-                                <div class="section-reseach__item section-reseach-item  swiper-slide">
-                                    <div class="section-reseach-item__image">
-                                        <img src="./assets/images/res2.png" alt="">
-                                    </div>
-                                    <div class="section-reseach-item__body">
-                                        <a href="javascript:void(0)"
-                                            class="section-reseach-item__title">Инженерно-географические изыскания</a>
-                                        <div class="section-reseach-item__text">на конкретном участке, выбранном под
-                                            строительство. Основываясь на результатах исследований, наш инженер даст
-                                            оценку
-                                            земельного участка, а также сделает прогноз, обуславливающий выбор
-                                            фундамента.
-                                        </div>
-
-                                    </div>
-                                    <div class="section-reseach-item__mobile-link">
-                                        <a href="javascript:void(0)">
-                                            Подробнее об услуге</a>
-                                    </div>
-                                </div>
-
-
-                                <!--item-->
-                                <div class="section-reseach__item section-reseach-item swiper-slide">
-                                    <div class="section-reseach-item__image">
-                                        <img src="./assets/images/res3.png" alt="">
-                                    </div>
-                                    <div class="section-reseach-item__body">
-                                        <a href="javascript:void(0)" class="section-reseach-item__title">Геология
-                                            участка</a>
-                                        <div class="section-reseach-item__text">позволяющей получить информацию о
-                                            геологическом строении и ландшафте конкретной площадки. В числе основных
-                                            задач,
-                                            решаемых нашими инженерами: знакомство с гидрогеологической ситуацией,
-                                            определение характеристик грунта, выявление свойств подземных вод.
-                                            Полученные в
-                                            результате геологических изысканий сведения, дают возможность обнаружить или
-                                            спрогнозировать опасные процессы, а затем предупредить негативные изменения.
-                                        </div>
-
-                                    </div>
-
-                                    <div class="section-reseach-item__mobile-link">
-                                        <a href="javascript:void(0)">
-                                            Подробнее об услуге</a>
-                                    </div>
+                                <div>
+                                    <div> Прединвестиционный этап.</div>
+                                    <p>Исследования геодезии позволяют собрать информацию об особенностях участка,
+                                        обосновать инвестиционную привлекательность проекта, привлечь в строительство
+                                        сторонние средства.</p>
                                 </div>
 
                                 <!--item-->
-                                <div class="section-reseach__item section-reseach-item swiper-slide">
-                                    <div class="section-reseach-item__image">
-                                        <img src="./assets/images/res4.png" alt="">
-                                    </div>
-                                    <div class="section-reseach-item__body">
-                                        <a href="javascript:void(0)"
-                                            class="section-reseach-item__title">Инженерно-геодезическим изыскания</a>
-                                        <div class="section-reseach-item__text">необходимые для тщательного ознакомления
-                                            с
-                                            поверхностными водами. Отталкиваясь от полученных данных, заказчик сможет
-                                            оптимально расположить строительную площадку, а также определиться с
-                                            параметрами
-                                            и условиями использования конструкции.</div>
-
-                                    </div>
-
-                                    <div class="section-reseach-item__mobile-link">
-                                        <a href="javascript:void(0)">
-                                            Подробнее об услуге</a>
-                                    </div>
-                                </div>
-
-
-                                <!--item-->
-                                <div class="section-reseach__item section-reseach-item swiper-slide ">
-                                    <div class="section-reseach-item__image">
-                                        <img src="./assets/images/res5.png" alt="">
-                                    </div>
-                                    <div class="section-reseach-item__body">
-                                        <a href="javascript:void(0)"
-                                            class="section-reseach-item__title">Инженерно-экологическим изыскания</a>
-                                        <div class="section-reseach-item__text">необходимые для ознакомления с
-                                            состоянием
-                                            окружающей среды, а также с возможным ее изменением под воздействием
-                                            антропогенных нагрузок. Эти исследования способствуют предотвращению либо
-                                            максимальному снижению рисков возникновения опасных экологических явлений.
-                                        </div>
-
-                                    </div>
-
-                                    <div class="section-reseach-item__mobile-link">
-                                        <a href="javascript:void(0)">
-                                            Подробнее об услуге</a>
-                                    </div>
-                                </div>
-
-
-
-                                <!--item-->
-                                <div class="section-reseach__item section-reseach-item swiper-slide ">
-                                    <div class="section-reseach-item__image">
-                                        <img src="./assets/images/res5.png" alt="">
-                                    </div>
-                                    <div class="section-reseach-item__body">
-                                        <a href="javascript:void(0)"
-                                            class="section-reseach-item__title">Инженерно-экологическим изыскания</a>
-                                        <div class="section-reseach-item__text">необходимые для ознакомления с
-                                            состоянием
-                                            окружающей среды, а также с возможным ее изменением под воздействием
-                                            антропогенных нагрузок. Эти исследования способствуют предотвращению либо
-                                            максимальному снижению рисков возникновения опасных экологических явлений.
-                                        </div>
-
-                                    </div>
-
-                                    <div class="section-reseach-item__mobile-link">
-                                        <a href="javascript:void(0)">
-                                            Подробнее об услуге</a>
-                                    </div>
+                                <div>
+                                    <div> Предпроектный этап.</div>
+                                    <p>Сведения, полученные в ходе ИГДИ, необходимы для выбора оптимального места под
+                                        застройку, а также для принятия правильных конструкторских решений.</p>
                                 </div>
 
                                 <!--item-->
-                                <div class="section-reseach__item section-reseach-item swiper-slide ">
-                                    <div class="section-reseach-item__image">
-                                        <img src="./assets/images/res5.png" alt="">
-                                    </div>
-                                    <div class="section-reseach-item__body">
-                                        <a href="javascript:void(0)"
-                                            class="section-reseach-item__title">Инженерно-экологическим изыскания</a>
-                                        <div class="section-reseach-item__text">необходимые для ознакомления с
-                                            состоянием
-                                            окружающей среды, а также с возможным ее изменением под воздействием
-                                            антропогенных нагрузок. Эти исследования способствуют предотвращению либо
-                                            максимальному снижению рисков возникновения опасных экологических явлений.
-                                        </div>
-
-                                    </div>
-
-                                    <div class="section-reseach-item__mobile-link">
-                                        <a href="javascript:void(0)">
-                                            Подробнее об услуге</a>
-                                    </div>
+                                <div>
+                                    <div> Проектный этап.</div>
+                                    <p>Подготовка проекта и в целом рабочей документации невозможна без достоверной
+                                        информации об особенностях ландшафта, наличии каких-либо объектов, других
+                                        характеристиках участка.</p>
                                 </div>
 
+                                <!--item-->
+                                <div>
+                                    <div> Строительный этап.</div>
+                                    <p>Возведение здания или любого другого объекта начинается с разметки стройплощадки.
+                                        Работы выполняются в соответствии проектной документацией, а также техническим
+                                        отчетом о проведении геодезических изысканий.</p>
 
+                                </div>
                             </div>
 
-                            <div class="swiper-pagination slider-pagination"></div>
-
+                            <p> Отдельно стоит отметить, что в составе комплексных исследований по геодезии для
+                                строительства специалисты осуществляют разбивку сетей (внешней и внутренней). Реперы и
+                                марки, установленные в процессе работ, в дальнейшем используются при выполнении
+                                исполнительной съемки котлована, фундамента, фасада, проемов, перекрытий и т.д.</p>
                         </div>
+
                     </div>
-                </div>
-            </section>
 
 
-            <!-- banner professional-->
-
-            <section class="section-banner-professional">
-                <div class="container">
-                    <div class="banner-professional">
-                        <div class="banner-professional__image">
-                            <img src="./assets/images/banner-prof.png" alt="">
-                        </div>
-                        <div class="banner-professional__desc">
-                            <h3 class="banner-professional__title">Профессионалы</h3>
-                            <div class="banner-professional__text"> В нашем центре инженерными изысканиями, а также
-                                инженерно-геологической съемкой и
-                                прочими исследованиями занимаются <b>сотрудники высшей квалификационной категории.</b>
-                                Предоставляя полную и объективную информацию, мы <b>помогаем заказчику определиться с
-                                    правильным подходом </b>
-                                к реализации линейных и площадных проектов, а также строительству коттеджей любой
-                                сложности.</div>
-                        </div>
-                    </div>
                 </div>
             </section>
 
@@ -1135,8 +681,8 @@
                                 </div>
 
                                 <div class="callback-form__input  callback-form__checkbox">
-                                    <input id="political2" type="checkbox" checked>
-                                    <label for="political2"></label>
+                                    <input id="political" type="checkbox" checked>
+                                    <label for="political"></label>
                                     <p>Нажимая на кнопку, Вы соглашаетесь с <a href="javascript:void(0)"> Политикой
                                             конфиденциальности </a></p>
                                 </div>
@@ -1147,155 +693,72 @@
                 </div>
             </section>
 
-            <!-- section statics-->
-            <section class="section-statics">
+            <section class="section-service-price">
                 <div class="container">
-                    <h2 class="section-statics__title"> О компании</h2>
-                    <div class="section-statics__row section-statics-row">
-                        <!--item-->
-                        <div class="section-statics-row__item section-statics-item">
-                            <div class="section-statics-item__title">Основана в </div>
-                            <div class="section-statics-item__number"> 2003</div>
-                        </div>
-
-                        <!--item-->
-                        <div class="section-statics-row__item section-statics-item">
-                            <div class="section-statics-item__title">Объектов </div>
-                            <div class="section-statics-item__number">1000+</div>
-                        </div>
-
-                        <!--item-->
-                        <div class="section-statics-row__item section-statics-item">
-                            <div class="section-statics-item__title">Штат сотрудников</div>
-                            <div class="section-statics-item__number">35</div>
-                        </div>
-
-                        <!--item-->
-                        <div class="section-statics-row__item section-statics-item">
-                            <div class="section-statics-item__title">Буровых бригад</div>
-                            <div class="section-statics-item__number">7</div>
-                        </div>
-
-                    </div>
-                </div>
-
-            </section>
-
-            <!-- prices-->
-            <section class="section-prices">
-                <div class="container">
-                    <h2 class="section-prices__title"> Цены на геологию</h2>
-                    <div class="section-prices__row section-prices-row">
-                        <!--item-->
-                        <div class=" section-prices-row__item section-prices-row-item  ">
-                            <div class="section-prices-row-item__header">
-                                2 скважины
-                            </div>
-                            <div class="section-prices-row-item__body section-prices-row-item-body">
-                                <!-- sub-item-->
-                                <div class="section-prices-row-item-body__item">
-                                    <div class="section-prices-row-item-body__name">2 скважины по 8 метров: </div>
-                                    <div class="section-prices-row-item-body__price">32 000 руб. </div>
-                                </div>
-                                <!-- sub-item-->
-                                <div class="section-prices-row-item-body__item">
-                                    <div class="section-prices-row-item-body__name">2 скважины по 10 метров: </div>
-                                    <div class="section-prices-row-item-body__price">40 000 руб. </div>
-                                </div>
-
-                                <!-- sub-item-->
-                                <div class="section-prices-row-item-body__item">
-                                    <div class="section-prices-row-item-body__name">2 скважины по 12 метров: </div>
-                                    <div class="section-prices-row-item-body__price">48 800 руб. </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end item-->
-
-
-                        <!--item-->
-                        <div class=" section-prices-row__item section-prices-row-item  ">
-                            <div class="section-prices-row-item__header">
-                                3 скважины
-                            </div>
-                            <div class="section-prices-row-item__body section-prices-row-item-body">
-                                <!-- sub-item-->
-                                <div class="section-prices-row-item-body__item">
-                                    <div class="section-prices-row-item-body__name">3 скважины по 8 метров: </div>
-                                    <div class="section-prices-row-item-body__price">48 000 руб. </div>
-                                </div>
-                                <!-- sub-item-->
-                                <div class="section-prices-row-item-body__item">
-                                    <div class="section-prices-row-item-body__name">3 скважины по 10 метров:</div>
-                                    <div class="section-prices-row-item-body__price">60 000 руб. </div>
-                                </div>
-
-                                <!-- sub-item-->
-                                <div class="section-prices-row-item-body__item">
-                                    <div class="section-prices-row-item-body__name">3 скважины по 12 метров: </div>
-                                    <div class="section-prices-row-item-body__price">72 800 руб.</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end item-->
-
-                        <!--item-->
-                        <div class=" section-prices-row__item section-prices-row-item  ">
-                            <div class="section-prices-row-item__header">
-                                4 скважины
-                            </div>
-                            <div class="section-prices-row-item__body section-prices-row-item-body">
-                                <!-- sub-item-->
-                                <div class="section-prices-row-item-body__item">
-                                    <div class="section-prices-row-item-body__name">4 скважины по 8 метров: </div>
-                                    <div class="section-prices-row-item-body__price">64 000 руб. </div>
-                                </div>
-                                <!-- sub-item-->
-                                <div class="section-prices-row-item-body__item">
-                                    <div class="section-prices-row-item-body__name">4 скважины по 10 метров:</div>
-                                    <div class="section-prices-row-item-body__price">80 000 руб. </div>
-                                </div>
-
-                                <!-- sub-item-->
-                                <div class="section-prices-row-item-body__item">
-                                    <div class="section-prices-row-item-body__name">4 скважины по 12 метров: </div>
-                                    <div class="section-prices-row-item-body__price">96 800 руб.</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end item-->
-
-
-                        <!--item-->
-                        <div class=" section-prices-row__item section-prices-row-item  ">
-                            <div class="section-prices-row-item__header">
-                                5 скважин
-                            </div>
-                            <div class="section-prices-row-item__body section-prices-row-item-body">
-                                <!-- sub-item-->
-                                <div class="section-prices-row-item-body__item">
-                                    <div class="section-prices-row-item-body__name">5 скважин по 8 метров:</div>
-                                    <div class="section-prices-row-item-body__price">80 000 руб. </div>
-                                </div>
-                                <!-- sub-item-->
-                                <div class="section-prices-row-item-body__item">
-                                    <div class="section-prices-row-item-body__name">5 скважин по 10 метров:</div>
-                                    <div class="section-prices-row-item-body__price">100 000 руб. </div>
-                                </div>
-
-                                <!-- sub-item-->
-                                <div class="section-prices-row-item-body__item">
-                                    <div class="section-prices-row-item-body__name">5 скважин по 12 метров:</div>
-                                    <div class="section-prices-row-item-body__price">120 800 руб.</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end item-->
+                    <div class="section-service-price__desc">
+                        <h2 class="section-service-price__title"> Цены на инженерно-геодезические
+                            изыскания для строительства</h2>
+                        <p class="section-service-price__text">
+                            Стоимость геодезических работ в строительстве зависит от поставленных заказчиком задач,
+                            применяемых методик, характера и сложности исследуемых объектов. Для расчета итоговой суммы
+                            можно воспользоваться прайс-листом на проведение инженерно-геодезических изысканий в
+                            Краснодаре, делая поправку на индекс инфляции.
+                        </p>
                     </div>
 
-                    <div class="section-prices-loaded-block">
+                    <div class="notice-message section-service-price__message">
+                        <div class="notice-message__title">Обратите внимание! </div>
+                        <div class="notice-message__text">Цены на услуги геодезиста в Краснодаре, указанные на нашем
+                            сайте, являются ориентировочными. Чтобы получить более подробную информацию об условиях
+                            сотрудничества, воспользуйтесь специальной формой или свяжитесь с нами по телефону,
+                            указанному в шапке страницы. </div>
+                    </div>
+
+
+                    <div class="service-price-table__wrap">
+                        <table class="service-price-table" border="0" cellpadding="0" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Наименование вида работ</th>
+                                    <th scope="col">Примечание</th>
+                                    <th scope="col"><span>Стоимость, руб</span> <span>руб</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Вынос в натуру осей</td>
+                                    <td>точка</td>
+                                    <td>3 000</td>
+                                </tr>
+                                <tr>
+                                    <td>Определение марок на зданиях</td>
+                                    <td>точка</td>
+                                    <td>2 000</td>
+                                </tr>
+                                <tr>
+                                    <td>Вынос в натуру границ участка</td>
+                                    <td>точка</td>
+                                    <td>2 000</td>
+                                </tr>
+                                <tr>
+                                    <td>Топографическая съемка, геоподоснова</td>
+                                    <td>1 Га</td>
+                                    <td>От 7 000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Контрольно-исполнительная съемка</td>
+                                    <td>1 Га</td>
+                                    <td>От 12 000</td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+
+                    <div class="section-prices-loaded-block section-prices-loaded-block_service">
                         <div class="section-prices-loaded-block__load-btns">
-                            <a class="site-btn-load" href="javascript:void(0)">
+                            <a class="site-btn-load site-btn-load_service" href="javascript:void(0)">
                                 <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM2 16C1.45 16 0.979333 15.8043 0.588 15.413C0.196666 15.0217 0.000666667 14.5507 0 14V11H2V14H14V11H16V14C16 14.55 15.8043 15.021 15.413 15.413C15.0217 15.805 14.5507 16.0007 14 16H2Z" />
@@ -1303,7 +766,7 @@
                                 ТЗ на выполнение инженерно-геологических изысканий.
                             </a>
 
-                            <a class="site-btn-load" href="javascript:void(0)">
+                            <a class="site-btn-load site-btn-load_service" href="javascript:void(0)">
                                 <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM2 16C1.45 16 0.979333 15.8043 0.588 15.413C0.196666 15.0217 0.000666667 14.5507 0 14V11H2V14H14V11H16V14C16 14.55 15.8043 15.021 15.413 15.413C15.0217 15.805 14.5507 16.0007 14 16H2Z" />
@@ -1349,67 +812,402 @@
 
 
                     </div>
-                </div>
-            </section>
 
-            <!-- calculate-->
-            <section class="section-calculate">
-                <div class="container">
-                    <h2 class="section-calculate__title"> Калькулятор</h2>
-                    <div class="section-calculate__body">
-                        <iframe id="marquiz__frame_654d22ac698b0000258bf04c" class="marquiz__frame marquiz__frame_open"
-                            src="//quiz.marquiz.ru/654d22ac698b0000258bf04c?cookies=%7B%22_ym_uid%22%3A%221706621674197244166%22%7D&amp;href=http%3A%2F%2F127.0.0.1%3A5500%2Findex.html%23callback&amp;mode=modal&amp;referrer=http%3A%2F%2F127.0.0.1%3A5500%2Findex.html&amp;region=eu"
-                            scrolling="auto" frameborder="0" allow="autoplay"></iframe>
+                    <div class="service-price-notice">
+                        <div class="serivice-price-notice__title"> Стоимость геодезии под строительство зависит от
+                            нескольких факторов, в их числе особенности:</div>
+                        <ul>
+                            <li> ландшафта на исследуемой территории;</li>
+                            <li>уровень изученности участка;</li>
+                            <li> вид проектируемого сооружения;</li>
+                            <li> этап разработки проектной документации.</li>
+                        </ul>
+                        <div class="service-price-notice__text">Связавшись с нашими консультантами, вы сможете получить
+                            оперативный расчет стоимости геодезического изыскания. Более того, можно самостоятельно
+                            узнать, сколько стоят услуги геодезиста в Краснодаре. Для этого достаточно воспользоваться
+                            онлайн-калькулятором, который размещен на нашем сайте.</div>
 
                     </div>
+
+
+
+
                 </div>
             </section>
 
-
-            <!-- section reseach grunt-->
-            <section class="section-researc-grunt">
+            <!-- service banner service-->
+            <section class="section-banner-professional section-banner-proffesional-service">
                 <div class="container">
-                    <div class="message">
-                        <h3> Лаборатория для исследования грунта</h3>
-                        <p>
-                            Оснащение грунтоведческой лаборатории, входящей в состав нашей компании, соответствует
-                            лучшим современным стандартам. Причем нужно отметить, что оборудование обслуживается
-                            опытными специалистами с профильным образованием. Благодаря этому мы имеем возможность в
-                            процессе инженерных изысканий для строительства проводить самые сложные исследования
-                            грунтов. Таким образом, качество выполнения работ по геологии в Краснодаре и Краснодарском
-                            крае не только соответствует мировому уровню, но и зачастую превосходит его.
-                        </p>
-                        <p>
-                            Также стоит сказать, что профессионализм персонала и наличие высокотехнологичного
-                            оборудования позволяют минимизировать сроки выполнения работ, в том числе при компрессионных
-                            испытаниях, длительность которых обычно составляет 2-4 недели. Освоив новую технологию, мы
-                            готовы предоставить результаты изысканий по геологии в течение 1 дня.
-                        </p>
+                    <h2 class="section-banner-proffesional-service__title"> Какие работы входят в состав ИГДИ?</h2>
+                    <div class="banner-professional bannner-professional_service">
+                        <div class="banner-professional__image"
+                            style="background-image:url('/assets/images/service-banner.png')">
+                            <!-- <img src="./assets/images/service-banner.png" alt=""> -->
+                        </div>
+                        <div class="banner-professional__desc">
+                            <div class="banner-professional__text">
+                                <p>
+                                    Качество проведения любых инженерных изысканий влияет на долговечность и
+                                    безопасность
+                                    будущих объектов. Именно поэтому данная отрасль достаточно строго регламентирована.
+                                    Относится это и к составу работ, выполняемых в ходе исследования геодезии участков.
+                                    В
+                                    частности, он описывается в СНиП 11-02-96 и СП 47.13330.2016.
+                                </p>
 
-                        <p>Имея в своем распоряжении современное лабораторное оборудование, наши специалисты выполняют
-                            комплексные и разносторонние исследования. К примеру, в рамках услуг геологических изысканий
-                            для строительства, сотрудники оценивают такие свойства и характеристики грунтов, как:</p>
-
-                        <ul>
-                            <li> особенности окружающей среды; </li>
-                            <li> степень влияния строительства на состояние местности;</li>
-                            <li> прогноз возможных изменений и т.д.</li>
-                        </ul>
-                        <p>Чтобы получить более подробную информацию об инженерно-геологических изысканиях или условиях
-                            сотрудничества, а также воспользоваться услугами специалистов компании «Геолог-Краснодар»,
-                            свяжитесь с нами по телефону: 8 (991) 608-09-56.</p>
-                        <div class="message-columns-text">
-                            <div class="message-columns-text__title"> Технические отчеты успешно проходят проверку
-                                государственных и негосударственных экспертиз</div>
-                            <ul>
-                                <li> ФАУ "Главгосэкспертиза России"</li>
-                                <li> "Краснодар Экспертиза"</li>
-                                <li> ООО "Научный Центр Независимых ПравовыхЭкспертиз"</li>
-                            </ul>
+                                <p>Согласно данным документам, геодезические изыскания включают в себя:</p>
+                            </div>
+                        </div>
+                        <!-- items-->
+                        <div class="section-banner-proffesional-service__contains">
+                            <div></div>
                         </div>
                     </div>
+
+                    <div class="section-banner-service-adv section-banner-proffesional-service__adv">
+                        <!--item-->
+                        <div class="section-banner-service-adv__item">сбор, изучение и систематизацию информации,
+                            полученной при проведении более ранних изысканий;</div>
+
+                        <!--item-->
+                        <div class="section-banner-service-adv__item">рекогносцировку, то есть исследование территории,
+                            которое позволяет конкретизировать программу работ;</div>
+
+                        <!--item-->
+                        <div class="section-banner-service-adv__item">формирование либо развитие опорных и
+                            планово-высотных съемочных геодезических сетей;;</div>
+
+                        <!--item-->
+                        <div class="section-banner-service-adv__item">топосъемку местности, включая не только наземные,
+                            но и подземные объекты (инженерные коммуникации, остатки старых фундаментов и пр.);</div>
+
+                        <!--item-->
+                        <div class="section-banner-service-adv__item">
+
+                            перенос в натуру точек изысканий (проектных точек, осей, высотных отметок, границ участка и
+                            т.д.);
+                        </div>
+
+                        <!--item-->
+                        <div class="section-banner-service-adv__item">
+                            разработку кадастровых карт, инженерных чертежей и схем, топографических планов, других
+                            графических материалов;
+                        </div>
+
+                        <!--item-->
+                        <div class="section-banner-service-adv__item">
+                            камеральную обработку всей информации, полученной в ходе исследовательских работ, и
+                            подготовку техотчета.
+                        </div>
+                    </div>
+
+                    <div class="section-banner-service__desc">
+                        <p> Готовый технический отчет содержит сведения о проекте, топографо-геодезической изученности
+                            территории, физических и географических характеристиках выделенного под строительство
+                            участка, используемых методах, результатах исследования. Также в него входят заключения
+                            и рекомендации инженеров-геодезистов.</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- finishing work-->
+            <section class="section-finishing-work">
+                <div class="container">
+                    <div class="section-finishing-work__desc">
+                        <h2 class="section-finishing-work__title">Что получает заказчик по завершении
+                            геодезических работ в строительстве?</h2>
+                        <p><span>Результат исследований </span> — профессионально подготовленный технический отчет, с
+                            описанием
+                            полученных измерений, с текстовыми и графическими приложениями.</p>
+                    </div>
+
+                    <div class="section-finishing-work__items">
+                        <!--item-->
+                        <div class="section-finishing-work-item ">
+
+                            <div class="section-finishing-work-item__text">
+                                <div class="section-finishing-work-item__title">Первый (текстовый) раздел содержит:
+                                </div>
+                                <ul>
+                                    <li>техзадание на инженерно-геодезические изыскания для строительства;</li>
+                                    <li>ситуационный план территории, на которой проводилось исследование;</li>
+                                    <li>копии лицензий, на основании которых наша компания оказывает услуги;</li>
+                                    <li>заявление на право ведения топографо-геодезических работ;</li>
+                                    <li>копии документов, подтверждающих своевременное прохождение поверки приборов;
+                                    </li>
+                                    <li>перечень исходных точек;</li>
+                                    <li>отчет по GPS;</li>
+                                    <li>ведомость, в которой представлены результаты уравнивания;</li>
+                                    <li>диск с записью электронной версии топоплана;</li>
+                                    <li>другую информацию.</li>
+
+                                </ul>
+                            </div>
+
+                            <div class="section-finishing-work-item__image">
+                                <img src="./assets/images/finish-service.png" alt="">
+                            </div>
+                        </div>
+
+
+                        <!--item-->
+                        <div class="section-finishing-work-item ">
+
+                            <div class="section-finishing-work-item__text">
+                                <div class="section-finishing-work-item__title">Что касается второго (графического)
+                                    раздела, составленного по завершении геодезических работ в строительстве, то в нем
+                                    указываются такие сведения, как:</div>
+                                <ul>
+                                    <li>картограмма произведенных геодезических изысканий;</li>
+                                    <li>схема съемочных сетей;</li>
+                                    <li>бумажный план местности, имеющий масштаб 1:500;</li>
+                                    <li>план коммуникационных сетей и данные по их эксплуатационно-техническим
+                                        характеристикам;</li>
+                                    <li>другие графические документы.</li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+
                 </div>
             </section>
+
+            <!-- example  reports-->
+            <section class="section-example-reports">
+                <div class="container">
+                    <h2 class="section-example-reports__title">Примеры отчетов</h2>
+                    <div class="section-example-reports-row">
+                        <a class="site-btn-load" href="javascript:void(0)">
+                            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM2 16C1.45 16 0.979333 15.8043 0.588 15.413C0.196666 15.0217 0.000666667 14.5507 0 14V11H2V14H14V11H16V14C16 14.55 15.8043 15.021 15.413 15.413C15.0217 15.805 14.5507 16.0007 14 16H2Z">
+                                </path>
+                            </svg>
+                            Пример отчета Геология
+                        </a>
+
+                        <a class="site-btn-load" href="javascript:void(0)">
+                            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM2 16C1.45 16 0.979333 15.8043 0.588 15.413C0.196666 15.0217 0.000666667 14.5507 0 14V11H2V14H14V11H16V14C16 14.55 15.8043 15.021 15.413 15.413C15.0217 15.805 14.5507 16.0007 14 16H2Z">
+                                </path>
+                            </svg>
+                            Пример отчета Экология
+                        </a>
+
+
+                        <a class="site-btn-load" href="javascript:void(0)">
+                            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM2 16C1.45 16 0.979333 15.8043 0.588 15.413C0.196666 15.0217 0.000666667 14.5507 0 14V11H2V14H14V11H16V14C16 14.55 15.8043 15.021 15.413 15.413C15.0217 15.805 14.5507 16.0007 14 16H2Z">
+                                </path>
+                            </svg>
+                            Пример отчета Геодезия
+                        </a>
+
+                        <a class="site-btn-load" href="javascript:void(0)">
+                            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM2 16C1.45 16 0.979333 15.8043 0.588 15.413C0.196666 15.0217 0.000666667 14.5507 0 14V11H2V14H14V11H16V14C16 14.55 15.8043 15.021 15.413 15.413C15.0217 15.805 14.5507 16.0007 14 16H2Z">
+                                </path>
+                            </svg>
+                            Пример отчета Гидромет
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- example work-->
+            <section class="section-example-works">
+                <div class="container">
+                    <h2 class="section-example-reports__title"> Примеры работ</h2>
+                    <div class="work-slider__wrapper">
+                        <div class="works-slider swiper">
+                            <div class="swiper-wrapper">
+                                <!--item-->
+                                <div class="work-slider__item swiper-slide">
+                                    <div class="work-slider__image">
+                                        <img src="./assets/images/portfolio1.png" alt="">
+                                    </div>
+                                </div>
+
+                                <!--item-->
+                                <div class="work-slider__item swiper-slide">
+                                    <div class="work-slider__image">
+                                        <img src="./assets/images/portfolio1.png" alt="">
+                                    </div>
+                                </div>
+
+
+                                <!--item-->
+                                <div class="work-slider__item swiper-slide">
+                                    <div class="work-slider__image">
+                                        <img src="./assets/images/finish-service.png" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-example-works__button">
+                        <a class="site-btn-2 site-btn-2_eqiupment" href="javascript:void(0)">Смотреть все
+                            работы</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- requpment -->
+            <section class="section-equipment section-equipment_service">
+                <div class="container">
+                    <div class="section-equipment__inner">
+                        <h2 class="section-equipment__title">Наше оборудование</h2>
+                        <div class="section-equipment-row swiper equipment-slider ">
+                            <div class="swiper-wrapper">
+                                <!--item-->
+                                <div class="section-equipment-item swiper-slide">
+                                    <div class="section-equipment-item__image">
+                                        <img src="./assets/images/ex1.png" alt="">
+                                    </div>
+                                    <div class="section-equipment-item__title">
+                                        Малогабаритная установка УКБ-12/25
+                                    </div>
+                                    <div class="section-equipment-item__text">
+                                        Малогабаритная легкоперевозимая установка УКБ-12/25 предназначена для бурения
+                                        скважин глубиной до 15 м шнековым способом и до 25 м твердосплавными коронками с
+                                        промывкой в труднодоступных или стесненных условиях.
+                                    </div>
+                                </div>
+
+
+                                <!--item-->
+                                <div class="section-equipment-item swiper-slide">
+                                    <div class="section-equipment-item__image">
+                                        <img src="./assets/images/ex2.png" alt="">
+                                    </div>
+                                    <div class="section-equipment-item__title">
+                                        Агрегат вибрационного бурения АВБ-2М
+                                    </div>
+                                    <div class="section-equipment-item__text">
+                                        Агрегат вибрационного бурения АВБ-2М предназначен для бурения:вертикальных
+                                        скважин
+                                        вибрационным методом в породах I-IV категорий при инженерных изысканиях,скважин
+                                        ударно-канатным методом в породах до VII категории
+                                    </div>
+                                </div>
+
+                                <!--item-->
+                                <div class="section-equipment-item swiper-slide">
+                                    <div class="section-equipment-item__image">
+                                        <img src="./assets/images/ex3.png" alt="">
+                                    </div>
+                                    <div class="section-equipment-item__title">
+                                        Буровая установка ПБУ-50
+                                    </div>
+                                    <div class="section-equipment-item__text">
+                                        Буровая установка ПБУ—50 используется при:проведении инженерно—геологических
+                                        или
+                                        технических изысканий,бурении скважин при сейсморазведке,бурении
+                                        инженерно—геологических скважин.
+                                    </div>
+                                </div>
+
+                                <!--item-->
+                                <div class="section-equipment-item swiper-slide">
+                                    <div class="section-equipment-item__image">
+                                        <img src="./assets/images/ex3.png" alt="">
+                                    </div>
+                                    <div class="section-equipment-item__title">
+                                        Буровая установка ПБУ-50
+                                    </div>
+                                    <div class="section-equipment-item__text">
+                                        Буровая установка ПБУ—50 используется при:проведении инженерно—геологических
+                                        или
+                                        технических изысканий,бурении скважин при сейсморазведке,бурении
+                                        инженерно—геологических скважин.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-pagination slider-pagination"></div>
+                        </div>
+
+
+                        <div class="section-equipment-all">
+                            <a class="site-btn-2 site-btn-2_eqiupment" href="javascript:void(0)">Смотреть все
+                                оборудование</a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+            <!-- end equpment-->
+
+
+            <!-- section advantages service-->
+            <section class="section-advantages section-advantages-services">
+                <div class="container">
+                    <div class="section-advantages__inner">
+                        <div class="section-advantages-services__desc">
+                            <h2 class="section-advantages-service__title"> Преимущества ООО «Геолог-Краснодар»</h2>
+                            <p>Одним из ключевых преимуществ нашей компании являются оптимальные цены на изыскательские
+                                услуги. Итоговая стоимость работ зависит от площади участка, объема геодезических
+                                изысканий, сложности местности и других факторов, но в любом случае остается более чем
+                                доступной. Причем как для крупных корпоративных заказчиков, так и для частных лиц,
+                                планирующих строительство коттеджа.</p>
+                            <p>Впрочем, список преимуществ ООО «Геолог-Краснодар» не ограничивается лояльной ценовой
+                                политикой. Помимо этого, следует отметить такие плюсы, как:</p>
+                        </div>
+                        <div class="section-advantages-row advantages-service-slider swiper">
+                            <div class="swiper-wrapper">
+                                <!--item-->
+                                <div class="section-advantages-row__item section-advantages-row-item swiper-slide">
+                                    <span class="advantages-service-slider__title"> Высокий уровень профессиональной
+                                        подготовки специалистов.
+                                    </span>
+                                    <div class="advantages-service-slider__text">
+                                        Инженеры, геодезисты, техники компании имеют не только профильное образование,
+                                        но и богатый практический опыт.
+                                    </div>
+                                </div>
+
+                                <!--item-->
+                                <div class="section-advantages-row__item section-advantages-row-item swiper-slide">
+                                    <span class="advantages-service-slider__title"> Наличие современного оборудования.
+                                    </span>
+                                    <div class="advantages-service-slider__text">
+                                        В распоряжении наших специалистов есть все необходимое для оперативного и
+                                        качественного решения поставленных задач, включая тахеометры, нивелиры, сканеры,
+                                        фотокамеры и многое другое.
+                                    </div>
+                                </div>
+
+                                <!--item-->
+                                <div class="section-advantages-row__item section-advantages-row-item swiper-slide">
+                                    <span class="advantages-service-slider__title"> Готовность к выполнению любых
+                                        заявок. </span>
+                                    <div class="advantages-service-slider__text">
+                                        Мы работаем как с масштабными проектами, так и с небольшими частными заказами.
+                                        При этом всегда стремимся предложить максимально комфортные условия
+                                        сотрудничества.
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                            <div class="swiper-pagination slider-pagination"></div>
+                        </div>
+                    </div>
+            </section>
+
+
             <!--section tech task -->
             <section class="section-tech-task">
                 <div class="container">
@@ -1453,6 +1251,7 @@
                     </div>
                 </div>
             </section>
+
 
             <!-- section faq-->
             <section class="section-faq">
@@ -1613,39 +1412,50 @@
                 </div>
             </section>
 
+
             <!-- garanty-->
-            <section class="section-garanty">
+            <section class="section-garanty section-garanty-service">
                 <div class="container">
                     <div class="message">
+
                         <h3 class="message-title"> Гарантии</h3>
-                        <p>Компания Геолог-Краснодар гарантирует всем заказчикам высокое качество в сочетании с
-                            невысокими расценками на проведение инженерно-геологических, геофизических, экологических,
-                            гидрологических и геодезических изысканий.</p>
+                        <div>
+                            <p>Компания Геолог-Краснодар гарантирует всем заказчикам высокое качество в сочетании с
+                                невысокими расценками на проведение инженерно-геологических, геофизических,
+                                экологических,
+                                гидрологических и геодезических изысканий.</p>
 
-                        <p> Эти преимущества достигаются благодаря наличию в нашем коллективе инженеров и лаборантов
-                            высокой квалификации, обладающих отличной подготовкой и большим опытом разнообразных
-                            изысканий.</p>
+                            <p> Эти преимущества достигаются благодаря наличию в нашем коллективе инженеров и лаборантов
+                                высокой квалификации, обладающих отличной подготовкой и большим опытом разнообразных
+                                изысканий.</p>
 
-                        <p> Если у вас нет справки о доходах, получить микрозайм в Украине все равно можно в одной из
-                            микрофинансовых организаций.
-                            Дополнительную гарантию качества мы предоставляем в виде сопровождения проектов
-                            Государственной экспертизы, включая разделы, соответствующие техническому заданию, по
-                            выполнению инженерных изысканий.</p>
+                            <p> Если у вас нет справки о доходах, получить микрозайм в Украине все равно можно в одной
+                                из
+                                микрофинансовых организаций.
+                                Дополнительную гарантию качества мы предоставляем в виде сопровождения проектов
+                                Государственной экспертизы, включая разделы, соответствующие техническому заданию, по
+                                выполнению инженерных изысканий.</p>
 
-                        <p>Даже если Госэкспертиза выявляет недостатки, связанные с деятельностью наших заказчиков, мы
-                            готовы незамедлительно оказать помощь в проведении дополнительных инженерных изысканий.</p>
+                            <p>Даже если Госэкспертиза выявляет недостатки, связанные с деятельностью наших заказчиков,
+                                мы
+                                готовы незамедлительно оказать помощь в проведении дополнительных инженерных изысканий.
+                            </p>
 
-                        <p>Какие МФО или ломбарды готовы кредитовать простых украинцев и выдавать им кредит онлайн на
-                            карту без отказа и проверок в интернете.</p>
+                            <p>Какие МФО или ломбарды готовы кредитовать простых украинцев и выдавать им кредит онлайн
+                                на
+                                карту без отказа и проверок в интернете.</p>
 
-                        <p>Наша компания работает на основании действующей лицензии и допусков на проведение
-                            исследований.
-                            Мы поможем разобраться с наиболее сложными проблемами, если заказчик доверит нам проведение
-                            изыскательских работ.</p>
+                            <p>Наша компания работает на основании действующей лицензии и допусков на проведение
+                                исследований.
+                                Мы поможем разобраться с наиболее сложными проблемами, если заказчик доверит нам
+                                проведение
+                                изыскательских работ.</p>
+                        </div>
 
                     </div>
                 </div>
             </section>
+
 
             <!-- condition payment-->
             <section class="section-condition-payment">
@@ -1752,13 +1562,17 @@
                 </div>
             </section>
 
+
             <!-- condition work-->
-            <section class="section-work">
+            <section class="section-work section-work-serivice">
                 <div class="container">
                     <div class="message messge_work">
                         <h3 class="message-title"> Условия работы</h3>
-                        <p>Компания Геолог-Краснодар работает на основе взаимовыгодного сотрудничества, после заключения
-                            Договора и внесения заказчиком авансового платежа.</p>
+                        <div>
+                            <p>Компания Геолог-Краснодар работает на основе взаимовыгодного сотрудничества, после
+                                заключения
+                                Договора и внесения заказчиком авансового платежа.</p>
+                        </div>
                         <div class="order-work">
                             <h3 class="message-title order-work__title">Порядок работ</h3>
                             <div class="order-work__items order-work-items">
@@ -1827,20 +1641,125 @@
                                     </div>
                                 </div>
                             </div>
-                            <p>
-                                Достоинством компании Геолог-Краснодар является индивидуальное отношение ко всем
-                                заказчикам. Это заключается в индивидуальном обсуждении размера аванса, порядка и сроков
-                                работ, сопровождения и прохождения экспертизы и стоимости заказа с каждым из заказчиков.
-                            </p>
-                            <p>
-                                Оформить техническое задание для выполнения изысканий можно после скачивания нужного
-                                варианта шаблона для проведения работ, размещенных на нашем сайте.
-                            </p>
+                            <div>
+                                <p>
+                                    Достоинством компании Геолог-Краснодар является индивидуальное отношение ко всем
+                                    заказчикам. Это заключается в индивидуальном обсуждении размера аванса, порядка и
+                                    сроков
+                                    работ, сопровождения и прохождения экспертизы и стоимости заказа с каждым из
+                                    заказчиков.
+                                </p>
+                                <p>
+                                    Оформить техническое задание для выполнения изысканий можно после скачивания нужного
+                                    варианта шаблона для проведения работ, размещенных на нашем сайте.
+                                </p>
+                            </div>
+
 
                         </div>
                     </div>
                 </div>
             </section>
+
+            <!-- section sert-->
+            <section class="section-sert">
+                <div class="container">
+                    <h2 class="section-sert__title"> Лицензии и серфтификаты</h2>
+                    <div class="swiper sert-slider">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="reviews-slider-item swiper-slide">
+                                <a class="trigger-fancy" href="#gallery_1">
+                                    <img src="./assets/images/review1.png" />
+                                </a>
+
+                                <div id="gallery_1" class="global-popup" style="display:none">
+                                    <div class="global-popup__body">
+                                        <img src="./assets/images/review1.png" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slides -->
+                            <div class="reviews-slider-item swiper-slide">
+                                <a class="trigger-fancy" href="#gallery_2">
+                                    <img src="./assets/images/review1.png" />
+                                </a>
+
+                                <div id="gallery_2" class="global-popup" style="display:none">
+                                    <div class="global-popup__body">
+                                        <img src="./assets/images/review1.png" />
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Slides -->
+                            <div class="reviews-slider-item swiper-slide">
+                                <a class="trigger-fancy" href="#gallery_3">
+                                    <img src="./assets/images/review1.png" />
+                                </a>
+                                <div id="gallery_3" class="global-popup" style="display:none">
+                                    <div class="global-popup__body">
+                                        <img src="./assets/images/review1.png" />
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Slides -->
+                            <div class="reviews-slider-item swiper-slide">
+                                <a class="trigger-fancy" href="#gallery_4">
+                                    <img src="./assets/images/review1.png" />
+                                </a>
+
+                                <div id="gallery_4" class="global-popup" style="display:none">
+                                    <div class="global-popup__body">
+                                        <img src="./assets/images/review1.png" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slides -->
+                            <div class="reviews-slider-item swiper-slide">
+                                <a class="trigger-fancy" href="#gallery_5">
+                                    <img src="./assets/images/review1.png" />
+                                </a>
+
+                                <div id="gallery_5" class="global-popup" style="display:none">
+                                    <div class="global-popup__body">
+                                        <img src="./assets/images/review1.png" />
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                        <!-- If we need navigation buttons -->
+                        <div class="sliders-arrows">
+                            <div class="swiper-button-prev arrow-slider-prev"><svg width="21" height="16"
+                                    viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.985125 7.60637C0.594601 7.99689 0.594601 8.63006 0.985125 9.02058L7.34909 15.3845C7.73961 15.7751 8.37278 15.7751 8.7633 15.3845C9.15382 14.994 9.15382 14.3609 8.7633 13.9703L3.10645 8.31348L8.7633 2.65662C9.15382 2.2661 9.15382 1.63293 8.7633 1.24241C8.37278 0.851883 7.73961 0.851883 7.34909 1.24241L0.985125 7.60637ZM20.3076 7.31348L1.69223 7.31347L1.69223 9.31347L20.3076 9.31348L20.3076 7.31348Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                            <div class="swiper-button-next arrow-slider-next"><svg width="20" height="16"
+                                    viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.3899 8.70711C19.7804 8.31658 19.7804 7.68342 19.3899 7.29289L13.0259 0.928932C12.6354 0.538408 12.0022 0.538408 11.6117 0.928932C11.2212 1.31946 11.2212 1.95262 11.6117 2.34315L17.2686 8L11.6117 13.6569C11.2212 14.0474 11.2212 14.6805 11.6117 15.0711C12.0022 15.4616 12.6354 15.4616 13.0259 15.0711L19.3899 8.70711ZM0.0673828 9H18.6828V7H0.0673828V9Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
 
             <!-- reviews-->
             <section class="section-reviews">
@@ -1941,6 +1860,7 @@
                 </div>
             </section>
 
+
             <!-- begin callback-->
             <section class="section-form" id="callback">
                 <div class="container">
@@ -1964,8 +1884,8 @@
                                 </div>
 
                                 <div class="callback-form__input  callback-form__checkbox">
-                                    <input id="political_3" type="checkbox" checked>
-                                    <label for="politica_3"></label>
+                                    <input id="political" type="checkbox" checked>
+                                    <label for="political"></label>
                                     <p>Нажимая на кнопку, Вы соглашаетесь с <a href="javascript:void(0)"> Политикой
                                             конфиденциальности </a></p>
                                 </div>
@@ -1975,7 +1895,6 @@
                     </div>
                 </div>
             </section>
-
 
         </div> <!-- end content-->
 

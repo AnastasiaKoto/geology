@@ -1,0 +1,118 @@
+/*about */
+.section-company-about-desc {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 80px;
+    margin-bottom: 50px;
+
+}
+
+.section-company-about-desc__title {
+    margin-bottom: 24px;
+}
+
+.section-company-about-desc__part1 {
+    line-height: 25.6px;
+}
+
+.section-company-about-desc__image {
+    width: 521px;
+    aspect-ratio: 521 / 339;
+    overflow: hidden;
+    border-radius: 24px;
+    box-shadow: 0px 13px 23.899999618530273px 0px #00000008;
+    max-width: 526px;
+}
+
+.section-company-about-desc__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.section-company-about-desc-adv {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 81px;
+}
+
+.section-company-about-desc-adv__item {
+    background-color: #EEEEEE;
+    border-radius: 24px;
+    padding: 51px 64px 71px;
+}
+
+.section-company-about-desc-adv__item>div:first-child {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 19px;
+    line-height: 32.6px;
+}
+
+/*responsive */
+@media (max-width:767.98px) {
+    .section-company-about-desc {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin-bottom: 50px;
+    }
+
+    .page-navigation {
+        padding-top: 19px;
+        gap: 9px;
+    }
+
+    .page-navigation {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        margin-bottom: 25px;
+    }
+
+    .section-company-about-desc__part2 {
+        order: -1;
+    }
+
+    .section-company-about-desc__image {
+        aspect-ratio: 360 / 234;
+        width: 100%;
+    }
+
+    .section-company-about-desc__part1 {
+        padding: 30px 24px 33px;
+        border-radius: 24px;
+        border: 1px solid #E3E3E3;
+    }
+
+    .section-company-about-desc__part1 h3 {
+        font-size: 20px;
+        margin-bottom: 14px;
+    }
+
+    .section-company-about-desc__part1 p {
+        line-height: 21px;
+    }
+
+    .section-company-about-desc-adv__item {
+        padding: 28px 18px 33px;
+    }
+    .section-company-about-desc-adv__item>div:first-child {
+       font-size: 20px;
+       line-height: 27px;
+       margin-bottom: 12px;
+    }
+    .section-company-about-desc-adv {
+        margin-bottom: 40px;
+    }
+}
+@media (min-width:768px) and (max-width:991.98px) {
+    .section-company-about-desc {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 80px;
+        margin-bottom: 50px;
+    }
+}
