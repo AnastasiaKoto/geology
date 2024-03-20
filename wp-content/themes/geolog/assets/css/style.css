@@ -818,6 +818,7 @@ ul {
     outline: none;
     border: none;
     flex-grow: 1;
+    max-height: 56px;
 }
 
 .site-btn-2 {
@@ -3190,6 +3191,7 @@ ul {
         margin-left: auto;
         margin-right: auto;
     }
+    
     .callback-form__inputs>div:nth-child(4) {
 
         grid-column: 1 / span 3;

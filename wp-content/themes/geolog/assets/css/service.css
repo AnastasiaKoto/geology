@@ -409,6 +409,16 @@
 }
 
 /*advantages service */
+
+.section-advantages-row-item h5 {
+    margin-bottom: 33px;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 18px;
+}
+.section-advantages-row-item{
+   height: auto;
+}
 .section-advantages-service__title {
     margin-bottom: 33px;
 }
@@ -468,6 +478,12 @@
 
 /*responsive */
 @media (max-width:767.98px) {
+    .section-advantages-row-item h5 {
+        font-size: 14px;
+        margin-bottom: 13px;
+        line-height: 22px;
+        
+    }
     .service-price-notice ul {
         margin-left: unset;
     }
