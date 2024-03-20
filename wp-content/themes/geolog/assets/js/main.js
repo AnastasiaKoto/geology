@@ -452,6 +452,10 @@ jQuery(document).ready(function ($) {
   });
   
 
+  $(".bottom-header__list > li >a").click(function(e){
+    e.preventDefault();
+  });
+
   //отправляем форму
   $('form .callback-form__btn').each(function () {
     let formSubmitted = false;
