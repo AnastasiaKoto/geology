@@ -324,55 +324,13 @@ if($works_gallery) {
         <div class="section-advantages__inner">
             <div class="section-advantages-services__desc">
                 <h2 class="section-advantages-service__title"> Преимущества ООО «Геолог-Краснодар»</h2>
-                <p>Одним из ключевых преимуществ нашей компании являются оптимальные цены на изыскательские
-                    услуги. Итоговая стоимость работ зависит от площади участка, объема геодезических
-                    изысканий, сложности местности и других факторов, но в любом случае остается более чем
-                    доступной. Причем как для крупных корпоративных заказчиков, так и для частных лиц,
-                    планирующих строительство коттеджа.</p>
-                <p>Впрочем, список преимуществ ООО «Геолог-Краснодар» не ограничивается лояльной ценовой
-                    политикой. Помимо этого, следует отметить такие плюсы, как:</p>
+                <?php 
+                if(get_field('feat_descr')) {
+                    echo get_field('feat_descr');
+                }
+                ?>
             </div>
-            <div class="section-advantages-row advantages-service-slider swiper">
-                <div class="swiper-wrapper">
-                    <!--item-->
-                    <div class="section-advantages-row__item section-advantages-row-item swiper-slide">
-                        <span class="advantages-service-slider__title"> Высокий уровень профессиональной
-                            подготовки специалистов.
-                        </span>
-                        <div class="advantages-service-slider__text">
-                            Инженеры, геодезисты, техники компании имеют не только профильное образование,
-                            но и богатый практический опыт.
-                        </div>
-                    </div>
-
-                    <!--item-->
-                    <div class="section-advantages-row__item section-advantages-row-item swiper-slide">
-                        <span class="advantages-service-slider__title"> Наличие современного оборудования.
-                        </span>
-                        <div class="advantages-service-slider__text">
-                            В распоряжении наших специалистов есть все необходимое для оперативного и
-                            качественного решения поставленных задач, включая тахеометры, нивелиры, сканеры,
-                            фотокамеры и многое другое.
-                        </div>
-                    </div>
-
-                    <!--item-->
-                    <div class="section-advantages-row__item section-advantages-row-item swiper-slide">
-                        <span class="advantages-service-slider__title"> Готовность к выполнению любых
-                            заявок. </span>
-                        <div class="advantages-service-slider__text">
-                            Мы работаем как с масштабными проектами, так и с небольшими частными заказами.
-                            При этом всегда стремимся предложить максимально комфортные условия
-                            сотрудничества.
-
-                        </div>
-
-
-                    </div>
-
-                </div>
-                <div class="swiper-pagination slider-pagination"></div>
-            </div>
+            <?php get_template_part('templates/features'); ?>
         </div>
 </section>
 
@@ -381,43 +339,7 @@ if($works_gallery) {
 <section class="section-tech-task">
     <div class="container">
         <h2 class="section-tech-task__title"> Техническое задание</h2>
-        <div class="section-tech-task__row section-tech-task-row">
-            <a class="site-btn-load" href="javascript:void(0)">
-                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM2 16C1.45 16 0.979333 15.8043 0.588 15.413C0.196666 15.0217 0.000666667 14.5507 0 14V11H2V14H14V11H16V14C16 14.55 15.8043 15.021 15.413 15.413C15.0217 15.805 14.5507 16.0007 14 16H2Z">
-                    </path>
-                </svg>
-                Инженерно-геологические изыскания
-            </a>
-
-            <a class="site-btn-load" href="javascript:void(0)">
-                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM2 16C1.45 16 0.979333 15.8043 0.588 15.413C0.196666 15.0217 0.000666667 14.5507 0 14V11H2V14H14V11H16V14C16 14.55 15.8043 15.021 15.413 15.413C15.0217 15.805 14.5507 16.0007 14 16H2Z">
-                    </path>
-                </svg>
-                Инженерно-геодезические изыскания
-            </a>
-
-            <a class="site-btn-load" href="javascript:void(0)">
-                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM2 16C1.45 16 0.979333 15.8043 0.588 15.413C0.196666 15.0217 0.000666667 14.5507 0 14V11H2V14H14V11H16V14C16 14.55 15.8043 15.021 15.413 15.413C15.0217 15.805 14.5507 16.0007 14 16H2Z">
-                    </path>
-                </svg>
-                Инженерно-экологические изыскания
-            </a>
-
-            <a class="site-btn-load" href="javascript:void(0)">
-                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM2 16C1.45 16 0.979333 15.8043 0.588 15.413C0.196666 15.0217 0.000666667 14.5507 0 14V11H2V14H14V11H16V14C16 14.55 15.8043 15.021 15.413 15.413C15.0217 15.805 14.5507 16.0007 14 16H2Z">
-                    </path>
-                </svg>
-                Инженерно-гидрометеорологические изыскания
-            </a>
-        </div>
+        <?php get_template_part('templates/tech', 'task'); ?>
     </div>
 </section>
 
@@ -426,158 +348,7 @@ if($works_gallery) {
 <section class="section-faq">
     <div class="container">
         <h2 class="section-faq__title"> Часто задаваемые вопросы</h2>
-
-        <!--item-->
-        <div class="section-faq-question">
-            <div class="section-faq-question__header">
-                <span> Целесообразно ли обращаться в геологическую компанию с заказом изысканий
-                    зимой?</span> <span> <svg viewBox="0 0 15 9" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L7.5 7.5L14 1" stroke="white" stroke-width="2"
-                            stroke-linecap="round" />
-                    </svg>
-                </span>
-            </div>
-            <div class="section-faq-question__answer">
-                Уровень качества инженерно-геологических изысканий от времени года никак не зависит. Это
-                связано с использованием лабораторных методов при определении физико-механических свойств
-                грунтов.
-            </div>
-        </div>
-
-
-        <!--item-->
-        <div class="section-faq-question">
-            <div class="section-faq-question__header">
-                <span> Занимаются ли инженеры компании определением характеристик грунтовых вод,
-                    включая их глубина расположения?</span> <span> <svg viewBox="0 0 15 9" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L7.5 7.5L14 1" stroke="white" stroke-width="2"
-                            stroke-linecap="round" />
-                    </svg>
-                </span>
-            </div>
-            <div class="section-faq-question__answer">
-                Уровень качества инженерно-геологических изысканий от времени года никак не зависит. Это
-                связано с использованием лабораторных методов при определении физико-механических свойств
-                грунтов.
-            </div>
-        </div>
-
-
-        <!--item-->
-        <div class="section-faq-question">
-            <div class="section-faq-question__header">
-                <span> Есть ли техническая возможность у вашей компании выполнения геологических изысканий
-                    при отсутствии заезда на территорию для буровой техники?</span> <span> <svg
-                        viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L7.5 7.5L14 1" stroke="white" stroke-width="2"
-                            stroke-linecap="round" />
-                    </svg>
-                </span>
-            </div>
-            <div class="section-faq-question__answer">
-                Есть ли техническая возможность у вашей компании выполнения геологических изысканий при
-                отсутствии заезда на территорию для буровой техники?
-            </div>
-        </div>
-
-        <!--item-->
-        <div class="section-faq-question">
-            <div class="section-faq-question__header">
-                <span> При проведении изысканий происходит ли заключение Договора?</span> <span> <svg
-                        viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L7.5 7.5L14 1" stroke="white" stroke-width="2"
-                            stroke-linecap="round" />
-                    </svg>
-                </span>
-            </div>
-            <div class="section-faq-question__answer">
-                Есть ли техническая возможность у вашей компании выполнения геологических изысканий при
-                отсутствии заезда на территорию для буровой техники?
-            </div>
-        </div>
-
-
-        <!--item-->
-        <div class="section-faq-question">
-            <div class="section-faq-question__header">
-                <span>Обязательно ли заключать Договор в офисе вашей компании?</span> <span> <svg
-                        viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L7.5 7.5L14 1" stroke="white" stroke-width="2"
-                            stroke-linecap="round" />
-                    </svg>
-                </span>
-            </div>
-            <div class="section-faq-question__answer">
-                Есть ли техническая возможность у вашей компании выполнения геологических изысканий при
-                отсутствии заезда на территорию для буровой техники?
-            </div>
-        </div>
-
-        <!--item-->
-        <div class="section-faq-question">
-            <div class="section-faq-question__header">
-                <span>Как ваша компания принимает оплату за проведение изысканий?</span> <span> <svg
-                        viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L7.5 7.5L14 1" stroke="white" stroke-width="2"
-                            stroke-linecap="round" />
-                    </svg>
-                </span>
-            </div>
-            <div class="section-faq-question__answer">
-                Есть ли техническая возможность у вашей компании выполнения геологических изысканий при
-                отсутствии заезда на территорию для буровой техники?
-            </div>
-        </div>
-
-        <!--item-->
-        <div class="section-faq-question">
-            <div class="section-faq-question__header">
-                <span>Что выдают заказчику после завершения изысканий?</span> <span> <svg viewBox="0 0 15 9"
-                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L7.5 7.5L14 1" stroke="white" stroke-width="2"
-                            stroke-linecap="round" />
-                    </svg>
-                </span>
-            </div>
-            <div class="section-faq-question__answer">
-                Есть ли техническая возможность у вашей компании выполнения геологических изысканий при
-                отсутствии заезда на территорию для буровой техники?
-            </div>
-        </div>
-
-        <!--item-->
-        <div class="section-faq-question">
-            <div class="section-faq-question__header">
-                <span>Отчет можно получить только в офисе?</span> <span> <svg viewBox="0 0 15 9" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L7.5 7.5L14 1" stroke="white" stroke-width="2"
-                            stroke-linecap="round" />
-                    </svg>
-                </span>
-            </div>
-            <div class="section-faq-question__answer">
-                Есть ли техническая возможность у вашей компании выполнения геологических изысканий при
-                отсутствии заезда на территорию для буровой техники?
-            </div>
-        </div>
-
-        <!--item-->
-        <div class="section-faq-question">
-            <div class="section-faq-question__header">
-                <span>Можно ли организовать работы в выходные дни?</span> <span> <svg viewBox="0 0 15 9"
-                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L7.5 7.5L14 1" stroke="white" stroke-width="2"
-                            stroke-linecap="round" />
-                    </svg>
-                </span>
-            </div>
-            <div class="section-faq-question__answer">
-                Есть ли техническая возможность у вашей компании выполнения геологических изысканий при
-                отсутствии заезда на территорию для буровой техники?
-            </div>
-        </div>
+        <?php get_template_part('templates/questions'); ?>
     </div>
 </section>
 
@@ -586,7 +357,6 @@ if($works_gallery) {
 <section class="section-garanty section-garanty-service">
     <div class="container">
         <div class="message">
-
             <h3 class="message-title"> Гарантии</h3>
             <div>
                 <p>Компания Геолог-Краснодар гарантирует всем заказчикам высокое качество в сочетании с

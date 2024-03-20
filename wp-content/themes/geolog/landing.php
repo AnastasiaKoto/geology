@@ -84,45 +84,25 @@ get_header();
             </div>
         </div>
     </section>
-    <?php 
-    $features = get_field('features');
-    if($features) {
-    ?>
-        <!-- section advantages-->
-        <section class="section-advantages">
-            <div class="container">
-                <div class="section-advantages__inner">
-                    <h2 class="section-advantages__title"> Преимущества геологических изысканий
-                        с компанией «Геолог-Краснодар»</h2>
-                    <div class="section-advantages-row advantages-slider swiper">
-                        <div class="swiper-wrapper">
-                            <?php
-                            foreach($features as $feature) {
-                            ?>
-                                <!--item-->
-                                <div class="section-advantages-row__item section-advantages-row-item swiper-slide">
-                                    <?php echo $feature['feature']; ?>
-                                </div>
-                            <?php
-                            }
-                            ?>
-                        </div>
-                        <div class="swiper-pagination slider-pagination slider-pagination__adv"></div>
+    
+    <!-- section advantages-->
+    <section class="section-advantages">
+        <div class="container">
+            <div class="section-advantages__inner">
+                <h2 class="section-advantages__title"> Преимущества геологических изысканий
+                    с компанией «Геолог-Краснодар»</h2>
+                
+                <?php get_template_part('templates/features'); ?>
 
+                <div class="section-advantages__call section-advantages-call ">
+                    <div class="section-advantages-call__name">
+                        Заказать геологические изыскания:
                     </div>
-
-                    <div class="section-advantages__call section-advantages-call ">
-                        <div class="section-advantages-call__name">
-                            Заказать геологические изыскания:
-                        </div>
-                        <a href="tel:<?php echo get_field('phone_link', 'option'); ?>"><?php echo get_field('phone_front', 'option'); ?></a>
-                    </div>
+                    <a href="tel:<?php echo get_field('phone_link', 'option'); ?>"><?php echo get_field('phone_front', 'option'); ?></a>
                 </div>
             </div>
-        </section>
-    <?php
-    }
-    ?>
+        </div>
+    </section>
     <?php 
     $informations = get_field('information');
     if($informations) {
@@ -468,68 +448,20 @@ get_header();
             ?>
         </div>
     </section>
-    <?php 
-    $tech_tasks = get_field('tex_files', 'option');
-    if($tech_tasks) {
-    ?>
-        <!--section tech task -->
-        <section class="section-tech-task">
-            <div class="container">
-                <h2 class="section-tech-task__title"> Техническое задание</h2>
-                <div class="section-tech-task__row section-tech-task-row">
-                    <?php 
-                    foreach($tech_tasks as $tech_task) {
-                    ?>
-                        <a class="site-btn-load" href="<?php echo $tech_task['file']; ?>">
-                            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM2 16C1.45 16 0.979333 15.8043 0.588 15.413C0.196666 15.0217 0.000666667 14.5507 0 14V11H2V14H14V11H16V14C16 14.55 15.8043 15.021 15.413 15.413C15.0217 15.805 14.5507 16.0007 14 16H2Z">
-                                </path>
-                            </svg>
-                            <?php echo $tech_task['name']; ?>
-                        </a>
-                    <?php
-                    }
-                    ?>
-                </div>
-            </div>
-        </section>
-    <?php 
-    }
-    ?>
-    <?php
-    $questions = get_field('questions');
-    if($questions) {
-    ?>
+    <!--section tech task -->
+    <section class="section-tech-task">
+        <div class="container">
+            <h2 class="section-tech-task__title"> Техническое задание</h2>
+            <?php get_template_part('templates/tech', 'task'); ?>
+        </div>
+    </section>
     <!-- section faq-->
     <section class="section-faq">
         <div class="container">
             <h2 class="section-faq__title"> Часто задаваемые вопросы</h2>
-            <?php 
-            foreach($questions as $question) {
-            ?>
-                <!--item-->
-                <div class="section-faq-question">
-                    <div class="section-faq-question__header">
-                        <span><?php echo $question->post_title; ?></span> <span> <svg viewBox="0 0 15 9" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1 1L7.5 7.5L14 1" stroke="white" stroke-width="2"
-                                    stroke-linecap="round" />
-                            </svg>
-                        </span>
-                    </div>
-                    <div class="section-faq-question__answer">
-                        <?php echo $question->post_content; ?>
-                    </div>
-                </div>
-            <?php
-            }
-            ?>
+            <?php get_template_part('templates/questions'); ?>
         </div>
     </section>
-    <?php
-    }
-    ?>
     <!-- garanty-->
     <section class="section-garanty">
         <div class="container">
