@@ -14,7 +14,7 @@ if($reviews) {
                     <img src="<?php echo $review; ?>" />
                 </a>
 
-                <div id="gallery_1" class="global-popup" style="display:none">
+                <div id="gallery_1" class="gallery-popup" style="display:none">
                     <div class="global-popup__body">
                         <img src="<?php echo $review; ?>" />
                     </div>

@@ -444,6 +444,14 @@ jQuery(document).ready(function ($) {
     $(this).next(".mobile-menu").toggleClass("mobile-menu_active");
   });
 
+  /*mobile dropdown */
+  $(".mobile-menu__list > li > a").click(function(e){
+    e.preventDefault();
+    $(this).parent("li").toggleClass("active");
+    $(this).next(".sub-menu").toggleClass("sub-menu_active");
+  });
+  
+
   //отправляем форму
   $('form .callback-form__btn').each(function () {
     let formSubmitted = false;

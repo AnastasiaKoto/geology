@@ -40,7 +40,8 @@
 .notice-message__text {
     line-height: 24px;
 }
-.section-messages-service .message > div:nth-child(2){
+
+.section-messages-service .message>div:nth-child(2) {
     margin-bottom: 30px;
 }
 
@@ -80,21 +81,29 @@
     border: 0px solid white;
 
 }
-.section-work-serivice .messge_work  > div:nth-child(2){
+
+.section-work-serivice .messge_work>div:nth-child(2) {
     margin-bottom: 30px;
 }
-.section-work-serivice .messge_work p:nth-last-of-type(1) {
-    margin-bottom: 0;
+
+.section-work-serivice .messge_work>div:nth-child(2) {
+    margin-bottom: 30px;
 }
+
+/* .section-work-serivice .messge_work p:nth-last-of-type(1) {
+    margin-bottom: 0;
+} */
 
 .service-price-table thead {
     background-color: #3EB250;
 }
-.service-price-table thead tr th:nth-child(2){
+
+.service-price-table thead tr th:nth-child(2) {
     padding-left: 5px;
     padding-right: 5px;
 }
-.service-price-table tbody tr td:nth-child(2){
+
+.service-price-table tbody tr td:nth-child(2) {
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -286,9 +295,10 @@
 }
 
 /*finising-work*/
-.section-finishing-work__desc  p span{
+.section-finishing-work__desc p span {
     font-weight: 600;
 }
+
 .section-finishing-work__desc {
     max-width: 840px;
     margin-left: auto;
@@ -409,6 +419,9 @@
 }
 
 /*advantages service */
+.section-advantages-services .advantages-slider {
+    margin-bottom: 0px;
+}
 
 .section-advantages-row-item h5 {
     margin-bottom: 33px;
@@ -416,9 +429,11 @@
     line-height: 25px;
     margin-bottom: 18px;
 }
-.section-advantages-row-item{
-   height: auto;
+
+.section-advantages-row-item {
+    height: auto;
 }
+
 .section-advantages-service__title {
     margin-bottom: 33px;
 }
@@ -482,11 +497,13 @@
         font-size: 14px;
         margin-bottom: 13px;
         line-height: 22px;
-        
+
     }
+
     .service-price-notice ul {
         margin-left: unset;
     }
+
     .section-messages_services .message p:not(:last-child) {
         margin-bottom: 16px;
 
@@ -749,17 +766,21 @@
     .section-banner-service-adv {
         gap: 21px;
     }
+
     .section-banner-proffesional-service__adv {
         margin-bottom: 45px;
     }
-    .section-banner-service__desc{
+
+    .section-banner-service__desc {
         line-height: 20px;
     }
+
     .section-banner-proffesional-service {
         padding-bottom: 40px;
     }
+
     /*finished work */
-    .section-finishing-work__title{
+    .section-finishing-work__title {
         font-size: 22px;
         line-height: 30px;
         max-width: 325px;
@@ -767,84 +788,104 @@
         margin-left: auto;
         margin-right: auto;
     }
+
     .section-finishing-work__desc p {
         line-height: 20px;
     }
+
     .section-finishing-work-item {
         display: flex;
         flex-direction: column-reverse;
         gap: 0px;
     }
+
     .section-finishing-work__desc {
-      margin-bottom: 43px;
+        margin-bottom: 43px;
     }
-    .section-finishing-work-item__image{
+
+    .section-finishing-work-item__image {
         aspect-ratio: 360 / 209;
         width: 100%;
         margin-bottom: 17px;
     }
 
     .section-finishing-work-item .section-finishing-work-item__text {
-       padding: 30px 15px 33px;
+        padding: 30px 15px 33px;
     }
+
     .section-finishing-work-item__title {
         font-size: 16px;
         padding-right: 10px;
         margin-bottom: 17px;
         line-height: 21.7px;
     }
+
     .section-finishing-work-item__text ul {
         font-weight: 600;
         line-height: 22.4px;
         list-style-type: disc;
         margin-left: 20px;
     }
-    .section-finishing-work-item__text ul li:not(:last-child){
+
+    .section-finishing-work-item__text ul li:not(:last-child) {
         margin-bottom: 9px;
     }
+
     .section-finishing-work__items>div:first-child {
         margin-bottom: 14px;
     }
+
     .section-finishing-work {
         padding-bottom: 40px;
     }
-    .section-example-reports-row{
+
+    .section-example-reports-row {
         grid-template-columns: 1fr;
         gap: 4px;
     }
-    .section-example-reports__title{
+
+    .section-example-reports__title {
         margin-bottom: 18px;
     }
+
     .section-example-reports {
         padding-bottom: 40px;
     }
+
     .work-slider__wrapper {
         margin-bottom: 30px;
     }
+
     .section-example-works {
         padding-bottom: 40px;
     }
-    .section-advantages-services .section-advantages-service__title{
+
+    .section-advantages-services .section-advantages-service__title {
         margin-bottom: 16px;
     }
-    .section-advantages-services__desc p{
+
+    .section-advantages-services__desc p {
         line-height: 20px;
     }
+
     .section-advantages-services__desc p:nth-of-type(1) {
         margin-bottom: 16px;
     }
-    .section-advantages-services__desc{
+
+    .section-advantages-services__desc {
         margin-bottom: 32px;
     }
+
     /*adv service slider */
-    .section-advantages-services{
+    .section-advantages-services {
         padding-bottom: 0;
     }
+
     .advantages-service-slider {
         padding-top: 19px;
         padding-bottom: 52px;
         position: relative;
-   
+
     }
 
     .advantages-service-slider .section-advantages-row-item:before {
@@ -856,7 +897,8 @@
         width: 35px;
         height: 35px;
     }
-    .advantages-service-slider .section-advantages-row-item{
+
+    .advantages-service-slider .section-advantages-row-item {
         height: auto;
     }
 
@@ -865,50 +907,60 @@
         padding-right: 0px;
         margin-bottom: 13px;
     }
-    .section-garanty-service .message{
+
+    .section-garanty-service .message {
         margin-bottom: 0px;
     }
+
     /*serts */
-    .section-sert__title{
+    .section-sert__title {
         margin-bottom: 27px;
     }
-    .section-sert{
+
+    .section-sert {
         padding-bottom: 40px;
     }
-    
+
 
 }
+
 @media (min-width:576px) and (max-width:767.98px) {
     .section-finishing-work__title {
-       max-width: 100%;
+        max-width: 100%;
     }
 }
+
 @media (min-width:768px) and (max-width:991.98px) {
     .service-price-table thead th:first-child {
         width: 50%;
-    }  
+    }
+
     .section-finishing-work-item {
         display: flex;
         flex-direction: column-reverse;
     }
+
     .section-finishing-work-item__image {
         aspect-ratio: 360 / 209;
         width: 100%;
         margin-bottom: 17px;
     }
 }
+
 @media (min-width:768px) and (max-width:1199.98px) {
-        .section-example-reports-row{
-            grid-template-columns: repeat(auto-fit,calc(50% - 20px));
-        }
-        .section-banner-proffesional-service .banner-professional__image{
-            max-width: 100%;
-            mask-image: unset;
-            aspect-ratio: 2 / 1;
-            background-size: cover;
-        }
+    .section-example-reports-row {
+        grid-template-columns: repeat(auto-fit, calc(50% - 20px));
+    }
+
+    .section-banner-proffesional-service .banner-professional__image {
+        max-width: 100%;
+        mask-image: unset;
+        aspect-ratio: 2 / 1;
+        background-size: cover;
+    }
 }
-@media (min-width:1199.98px)  and (max-width:1400px){
+
+@media (min-width:1199.98px) and (max-width:1400px) {
     .form-popup {
         max-width: 1000px;
         min-width: unset;

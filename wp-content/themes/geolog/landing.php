@@ -7,16 +7,16 @@ get_header();
 <!--<section class="test">
     <div class="container">
         <?php
-        $args = array(
-            'post_type' => 'services',
-            'post_status' => 'publish',
+        $args     = array(
+            'post_type'      => 'services',
+            'post_status'    => 'publish',
             'posts_per_page' => -1,
         );
         $services = new WP_Query($args);
         if ($services->have_posts()) {
-            while ( $services->have_posts() ) {
+            while ($services->have_posts()) {
                 $services->the_post();
-        ?>
+                ?>
                 <li class="test__test"><?php the_title(); ?></li>
         <?php
             }
@@ -28,9 +28,9 @@ get_header();
 <!-- Begin content-->
 <div class="content">
     <!-- banner -->
-    <?php get_template_part('templates/banner');  ?>
+    <?php get_template_part('templates/banner'); ?>
     <!-- end banner-->
-    <?php 
+    <?php
     $args = array(
         'post_type'      => 'services',
         'post_status'    => 'publish',
@@ -39,7 +39,7 @@ get_header();
 
     $services = new WP_Query($args);
     if ($services->have_posts()) {
-    ?>
+        ?>
         <!-- services -->
         <section class="section-services">
             <div class="container">
@@ -50,12 +50,12 @@ get_header();
                             <?php
                             while ($services->have_posts()) {
                                 $services->the_post();
-                            ?>
+                                ?>
                                 <a href="<?php the_permalink(); ?>" class="section-services-row__item">
                                     <?php the_title(); ?>
-                                </a> 
-                            <?php 
-                            } 
+                                </a>
+                            <?php
+                            }
                             ?>
                         </div>
                     </div>
@@ -64,8 +64,8 @@ get_header();
 
         </section>
         <!-- end services-->
-    <?php
-    } 
+        <?php
+    }
     wp_reset_postdata();
     ?>
     <!-- begin callback-->
@@ -76,71 +76,121 @@ get_header();
                     <h2 class="callback-form__title">Оставьте заявку</h2>
                     <p> и получите бесплатную консультацию специалиста</p>
                 </div>
-                <?php 
-                set_query_var( 'form_name', 'services_form' );
-                set_query_var( 'form_id', 'services_form' );
-                get_template_part('templates/form'); 
+                <?php
+                set_query_var('form_name', 'services_form');
+                set_query_var('form_id', 'services_form');
+                get_template_part('templates/form');
                 ?>
             </div>
         </div>
     </section>
-    
+
     <!-- section advantages-->
     <section class="section-advantages">
         <div class="container">
             <div class="section-advantages__inner">
                 <h2 class="section-advantages__title"> Преимущества геологических изысканий
                     с компанией «Геолог-Краснодар»</h2>
-                
+
                 <?php get_template_part('templates/features'); ?>
 
                 <div class="section-advantages__call section-advantages-call ">
                     <div class="section-advantages-call__name">
                         Заказать геологические изыскания:
                     </div>
-                    <a href="tel:<?php echo get_field('phone_link', 'option'); ?>"><?php echo get_field('phone_front', 'option'); ?></a>
+                    <a href="tel:<?php echo get_field('phone_link', 'option'); ?>">
+                        <?php echo get_field('phone_front', 'option'); ?>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
-    <?php 
+    <?php
     $informations = get_field('information');
-    if($informations) {
-    ?>
+    if ($informations) {
+        ?>
+        <?/*
+          <!-- Information-->
+          <section class="section-information">
+              <div class="container">
+                  <div class="section-information__inner">
+                      <h2 class="section-information__title"> Информация</h2>
+                      <div class="section-information__row">
+                          <?php
+                          foreach($informations as $information) {
+                              //var_dump($information);
+                              $post_id = $information->ID;
+                          ?>
+                          <!--item-->
+                          <a href="<?php echo get_permalink($post_id); ?>" class="section-information__item section-information-item">
+                              <div class="section-information-item__image">
+                                  <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id( $post_id )); ?>">
+                              </div>
+                              <div class="section-information-item__name"><?php echo $information->post_title; ?></div>
+                          </a>
+                          <?php
+                          }
+                          ?>
+                      </div>
+                  </div>
+              </div>
+          </section>
+          
+          */ ?>
         <!-- Information-->
         <section class="section-information">
             <div class="container">
                 <div class="section-information__inner">
                     <h2 class="section-information__title"> Информация</h2>
                     <div class="section-information__row">
-                        <?php
-                        foreach($informations as $information) {
-                            //var_dump($information);
-                            $post_id = $information->ID;
-                        ?>
                         <!--item-->
-                        <a href="<?php echo get_permalink($post_id); ?>" class="section-information__item section-information-item">
+                        <a href="#modal-recomendation"
+                            class="trigger-fancy section-information__item section-information-item">
                             <div class="section-information-item__image">
-                                <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id( $post_id )); ?>">
+                                <img src="/wp-content/themes/geolog/assets/images/info1.png">
                             </div>
-                            <div class="section-information-item__name"><?php echo $information->post_title; ?></div>
+                            <div class="section-information-item__name">Методы изысканий</div>
                         </a>
-                        <?php
-                        }
-                        ?>
+
+                        <!--item-->
+                        <a href="#success-form" class="trigger-fancy section-information__item section-information-item">
+                            <div class="section-information-item__image">
+                                <img src="/wp-content/themes/geolog/assets/images/info2.png">
+                            </div>
+                            <div class="section-information-item__name">Термины геологии</div>
+                        </a>
+
+
+                        <!--item-->
+                        <a href="javascript:void(0)" class="section-information__item section-information-item">
+                            <div class="section-information-item__image">
+                                <img src="/wp-content/themes/geolog/assets/images/info3.png">
+                            </div>
+                            <div class="section-information-item__name">Рекомендации
+                                по фундаменту</div>
+                        </a>
+
+                        <!--item-->
+                        <a href="javascript:void(0)" class="section-information__item section-information-item">
+                            <div class="section-information-item__image">
+                                <img src="/wp-content/themes/geolog/assets/images/info4.png">
+                            </div>
+                            <div class="section-information-item__name">Техническое задание</div>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
-    <?php
-    } 
+        <?php
+    }
     ?>
+
     <!-- requpment -->
     <section class="section-equipment">
         <div class="container">
             <div class="section-equipment__inner">
                 <h2 class="section-equipment__title">Наше оборудование</h2>
-                <?php get_template_part('templates/machines');  ?>
+                <?php get_template_part('templates/machines'); ?>
             </div>
         </div>
     </section>
@@ -149,14 +199,14 @@ get_header();
     <section class="section-messages">
         <div class="container">
             <div class="section-message__wrap">
-                <?php 
+                <?php
                 $article1 = get_field('mini-article1');
-                set_query_var( 'article', $article1 );
-                get_template_part('templates/mini', 'article'); 
+                set_query_var('article', $article1);
+                get_template_part('templates/mini', 'article');
                 ?>
-                <?php 
+                <?php
                 $article2 = get_field('mini-article2');
-                set_query_var( 'article', $article2 );
+                set_query_var('article', $article2);
                 get_template_part('templates/mini', 'article');
                 ?>
 
@@ -173,8 +223,8 @@ get_header();
     </section>
     <?php
     $types = get_field('service_types');
-    if($types) {
-    ?>
+    if ($types) {
+        ?>
         <!-- Group research-->
         <section class="section-reseach">
             <div class="container">
@@ -188,17 +238,18 @@ get_header();
                     <div class="section-reseach-row research-slider swiper">
                         <div class="swiper-wrapper">
                             <?php
-                            foreach($types as $type) {
+                            foreach ($types as $type) {
                                 $type_id = $type->ID;
-                            ?>
+                                ?>
                                 <!--item-->
                                 <div class="section-reseach__item section-reseach-item  swiper-slide">
                                     <div class="section-reseach-item__image">
                                         <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($type_id)); ?>" alt="">
                                     </div>
                                     <div class="section-reseach-item__body">
-                                        <a href="javascript:void(0)"
-                                            class="section-reseach-item__title"><?php echo $type->post_title; ?></a>
+                                        <a href="javascript:void(0)" class="section-reseach-item__title">
+                                            <?php echo $type->post_title; ?>
+                                        </a>
                                         <div class="section-reseach-item__text">
                                             <?php echo get_field('short_descr', $type_id); ?>
                                         </div>
@@ -210,7 +261,7 @@ get_header();
                                             Подробнее об услуге</a>
                                     </div>
                                 </div>
-                            <?php
+                                <?php
                             }
                             ?>
                         </div>
@@ -221,7 +272,7 @@ get_header();
                 </div>
             </div>
         </section>
-    <?php
+        <?php
     }
     ?>
     <!-- banner professional-->
@@ -255,10 +306,10 @@ get_header();
                     <h2 class="callback-form__title">Оставьте заявку</h2>
                     <p> и получите бесплатную консультацию специалиста</p>
                 </div>
-                <?php 
-                set_query_var( 'form_name', 'types_form' );
-                set_query_var( 'form_id', 'types_form' );
-                get_template_part('templates/form'); 
+                <?php
+                set_query_var('form_name', 'types_form');
+                set_query_var('form_id', 'types_form');
+                get_template_part('templates/form');
                 ?>
             </div>
         </div>
@@ -269,40 +320,48 @@ get_header();
         <div class="container">
             <h2 class="section-statics__title"> О компании</h2>
             <div class="section-statics__row section-statics-row">
-                <?php 
-                if(get_field('year')) {
-                ?>
-                <!--item-->
+                <?php
+                if (get_field('year')) {
+                    ?>
+                    <!--item-->
                     <div class="section-statics-row__item section-statics-item">
                         <div class="section-statics-item__title">Основана в </div>
-                        <div class="section-statics-item__number"> <?php echo get_field('year'); ?></div>
+                        <div class="section-statics-item__number">
+                            <?php echo get_field('year'); ?>
+                        </div>
                     </div>
                 <?php } ?>
-                <?php 
-                if(get_field('objects')) {
-                ?>
+                <?php
+                if (get_field('objects')) {
+                    ?>
                     <!--item-->
                     <div class="section-statics-row__item section-statics-item">
                         <div class="section-statics-item__title">Объектов </div>
-                        <div class="section-statics-item__number"><?php echo get_field('objects'); ?></div>
+                        <div class="section-statics-item__number">
+                            <?php echo get_field('objects'); ?>
+                        </div>
                     </div>
                 <?php } ?>
-                <?php 
-                if(get_field('works')) {
-                ?>
+                <?php
+                if (get_field('works')) {
+                    ?>
                     <!--item-->
                     <div class="section-statics-row__item section-statics-item">
                         <div class="section-statics-item__title">Штат сотрудников</div>
-                        <div class="section-statics-item__number"><?php echo get_field('works'); ?></div>
+                        <div class="section-statics-item__number">
+                            <?php echo get_field('works'); ?>
+                        </div>
                     </div>
                 <?php } ?>
-                <?php 
-                if(get_field('brigades')) {
-                ?>
+                <?php
+                if (get_field('brigades')) {
+                    ?>
                     <!--item-->
                     <div class="section-statics-row__item section-statics-item">
                         <div class="section-statics-item__title">Буровых бригад</div>
-                        <div class="section-statics-item__number"><?php echo get_field('brigades'); ?></div>
+                        <div class="section-statics-item__number">
+                            <?php echo get_field('brigades'); ?>
+                        </div>
                     </div>
                 <?php } ?>
             </div>
@@ -314,67 +373,71 @@ get_header();
     <section class="section-prices">
         <div class="container">
             <h2 class="section-prices__title"> Цены на геологию</h2>
-            <?php 
+            <?php
             $geo_prices = get_field('geolog_price', 'option');
-            if($geo_prices) {
-            ?>
+            if ($geo_prices) {
+                ?>
                 <div class="section-prices__row section-prices-row">
                     <?php
-                    foreach($geo_prices as $geo_price) {
+                    foreach ($geo_prices as $geo_price) {
                         $rows = $geo_price['row'];
-                    ?>
+                        ?>
                         <!--item-->
                         <div class=" section-prices-row__item section-prices-row-item  ">
                             <div class="section-prices-row-item__header">
                                 <?php echo $geo_price['wells_quant']; ?>
                             </div>
-                            <?php 
-                            if($rows) {
-                            ?>
+                            <?php
+                            if ($rows) {
+                                ?>
                                 <div class="section-prices-row-item__body section-prices-row-item-body">
                                     <?php
-                                    foreach($rows as $row) {
-                                    ?>
+                                    foreach ($rows as $row) {
+                                        ?>
                                         <!-- sub-item-->
                                         <div class="section-prices-row-item-body__item">
-                                            <div class="section-prices-row-item-body__name"><?php echo $row['depth']; ?> </div>
-                                            <div class="section-prices-row-item-body__price"><?php echo $row['wells_price']; ?> </div>
+                                            <div class="section-prices-row-item-body__name">
+                                                <?php echo $row['depth']; ?>
+                                            </div>
+                                            <div class="section-prices-row-item-body__price">
+                                                <?php echo $row['wells_price']; ?>
+                                            </div>
                                         </div>
-                                    <?php
-                                    } 
+                                        <?php
+                                    }
                                     ?>
                                 </div>
-                            <?php
+                                <?php
                             }
                             ?>
                         </div>
                         <!-- end item-->
                     <?php } ?>
                 </div>
-            <?php
+                <?php
             }
             ?>
             <div class="section-prices-loaded-block">
-                <?php 
-                $geo_files = get_field('geolog_files');
-                if($geo_files) {
-                ?>
-                <div class="section-prices-loaded-block__load-btns">
-                    <?php 
-                    foreach($geo_files as $geo_file) {
-                    ?>
-                        <a class="site-btn-load" href="<?php echo $geo_file['geolog_file']; ?>">
-                            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM2 16C1.45 16 0.979333 15.8043 0.588 15.413C0.196666 15.0217 0.000666667 14.5507 0 14V11H2V14H14V11H16V14C16 14.55 15.8043 15.021 15.413 15.413C15.0217 15.805 14.5507 16.0007 14 16H2Z" />
-                            </svg>
-                            <?php echo $geo_file['file_name']; ?>
-                        </a>
-                    <?php 
-                    }
-                    ?>
-                </div>
                 <?php
+                $geo_files = get_field('geolog_files');
+                if ($geo_files) {
+                    ?>
+                    <div class="section-prices-loaded-block__load-btns">
+                        <?php
+                        foreach ($geo_files as $geo_file) {
+                            ?>
+                            <a class="site-btn-load" href="<?php echo $geo_file['geolog_file']; ?>">
+                                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM2 16C1.45 16 0.979333 15.8043 0.588 15.413C0.196666 15.0217 0.000666667 14.5507 0 14V11H2V14H14V11H16V14C16 14.55 15.8043 15.021 15.413 15.413C15.0217 15.805 14.5507 16.0007 14 16H2Z" />
+                                </svg>
+                                <?php echo $geo_file['file_name']; ?>
+                            </a>
+                        <?php
+                        }
+                        ?>
+                    </div>
+                    <?php
                 }
                 ?>
                 <div class="section-prices__order-block">
@@ -382,9 +445,9 @@ get_header();
                 </div>
 
                 <div class="section-prices__socials">
-                    <?php 
-                    if(get_field('ssylka_telegram', 'option')) {
-                    ?>
+                    <?php
+                    if (get_field('ssylka_telegram', 'option')) {
+                        ?>
                         <a href="<?php echo get_field('ssylka_telegram', 'option'); ?>">
                             <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="50" height="50" rx="24" fill="#419FD9" />
@@ -401,12 +464,12 @@ get_header();
                                 </defs>
                             </svg>
                         </a>
-                    <?php 
+                    <?php
                     }
                     ?>
-                    <?php 
-                    if(get_field('ssylka_whatsapp', 'option')) {
-                    ?>
+                    <?php
+                    if (get_field('ssylka_whatsapp', 'option')) {
+                        ?>
                         <a href="<?php echo get_field('ssylka_whatsapp', 'option'); ?>">
                             <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="50" height="50" rx="24" fill="#0DC143" />
@@ -415,7 +478,7 @@ get_header();
                                     fill="white" />
                             </svg>
                         </a>
-                    <?php
+                        <?php
                     }
                     ?>
                 </div>
@@ -441,10 +504,10 @@ get_header();
     <!-- section reseach grunt-->
     <section class="section-researc-grunt">
         <div class="container">
-            <?php 
+            <?php
             $article3 = get_field('mini-article3');
-            set_query_var( 'article', $article3 );
-            get_template_part('templates/mini', 'article'); 
+            set_query_var('article', $article3);
+            get_template_part('templates/mini', 'article');
             ?>
         </div>
     </section>
@@ -465,10 +528,10 @@ get_header();
     <!-- garanty-->
     <section class="section-garanty">
         <div class="container">
-            <?php 
+            <?php
             $article4 = get_field('mini-article4');
-            set_query_var( 'article', $article4 );
-            get_template_part('templates/mini', 'article'); 
+            set_query_var('article', $article4);
+            get_template_part('templates/mini', 'article');
             ?>
         </div>
     </section>
@@ -476,7 +539,7 @@ get_header();
     <section class="section-condition-payment">
         <div class="container">
             <h2 class="section-condition-payment__title">Условия оплаты</h2>
-            <?php get_template_part('templates/condition', 'payment');  ?>
+            <?php get_template_part('templates/condition', 'payment'); ?>
         </div>
     </section>
 
@@ -485,19 +548,19 @@ get_header();
         <div class="container">
             <div class="message messge_work">
                 <h3 class="message-title"> Условия работы</h3>
-                <?php get_template_part('templates/condition', 'work');  ?>
+                <?php get_template_part('templates/condition', 'work'); ?>
             </div>
         </div>
     </section>
-    
+
     <!-- reviews-->
     <section class="section-reviews">
         <div class="container">
             <h2 class="section-reviews__title">Отзывы</h2>
-            <?php get_template_part('templates/reviews');  ?>
+            <?php get_template_part('templates/reviews'); ?>
         </div>
     </section>
-    
+
     <!-- begin callback-->
     <section class="section-form" id="callback">
         <div class="container">
@@ -506,10 +569,10 @@ get_header();
                     <h2 class="callback-form__title">Оставьте заявку</h2>
                     <p> и получите бесплатную консультацию специалиста</p>
                 </div>
-                <?php 
-                set_query_var( 'form_name', 'footer_form' );
-                set_query_var( 'form_id', 'footer_form' );
-                get_template_part('templates/form'); 
+                <?php
+                set_query_var('form_name', 'footer_form');
+                set_query_var('form_id', 'footer_form');
+                get_template_part('templates/form');
                 ?>
             </div>
         </div>

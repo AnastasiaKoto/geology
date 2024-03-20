@@ -171,10 +171,11 @@
 												'theme_location'  => 'header-cats',
 												'container'       => false,
 												'echo'            => true,
-												'depth'           => 1,
+												'depth'           => 2,
 												'menu_class'      => 'mobile-menu__list'
 											));
 										?>
+
 										<?php
 										wp_nav_menu(
 											array(
