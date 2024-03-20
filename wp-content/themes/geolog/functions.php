@@ -26,6 +26,8 @@ function all_styles() {
     //wp_enqueue_style('swiper-bundle-css', '/wp-content/themes/geolog/assets/css/swiper-bundle.min.css' );
     wp_enqueue_style('swiper-css', '/wp-content/themes/geolog/assets/css/swiper.min.css' );
     wp_enqueue_style('style-css', '/wp-content/themes/geolog/assets/css/style.css' );
+    wp_enqueue_style('service-css', '/wp-content/themes/geolog/assets/css/service.css' );
+    wp_enqueue_style( 'about_css', '/wp-content/themes/geolog/assets/css/about.css' );
 }
 function all_js() {
     wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.7.1.min.js');
@@ -36,20 +38,6 @@ function all_js() {
 }
 add_action('wp_enqueue_scripts', 'all_styles');
 add_action('wp_enqueue_scripts', 'all_js');
-
-//pages style
-
-function wpse_enqueue_page_template_styles() {
-  if ( is_page_template( 'about.php' ) ) {
-    wp_enqueue_style( 'about_css', '/wp-content/themes/geolog/assets/css/about.css' );
-  }
-
-  if ( is_singular( 'services' ) ) {
-    wp_enqueue_style('service-css', '/wp-content/themes/geolog/assets/css/service.css' );
-  }
-}
-
-add_action( 'wp_enqueue_scripts', 'wpse_enqueue_page_template_styles' );
 
 //меню
 add_action( 'after_setup_theme', 'theme_register_nav_header_top_menu' );
