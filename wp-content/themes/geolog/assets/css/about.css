@@ -75,7 +75,7 @@
 
 
 }
-.pagination ul li.active{
+.pagination ul li>span.current{
     background-color: #3EB250;
     color: white;
 }
