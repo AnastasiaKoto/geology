@@ -356,42 +356,11 @@ if($works_gallery) {
 <!-- garanty-->
 <section class="section-garanty section-garanty-service">
     <div class="container">
-        <div class="message">
-            <h3 class="message-title"> Гарантии</h3>
-            <div>
-                <p>Компания Геолог-Краснодар гарантирует всем заказчикам высокое качество в сочетании с
-                    невысокими расценками на проведение инженерно-геологических, геофизических,
-                    экологических,
-                    гидрологических и геодезических изысканий.</p>
-
-                <p> Эти преимущества достигаются благодаря наличию в нашем коллективе инженеров и лаборантов
-                    высокой квалификации, обладающих отличной подготовкой и большим опытом разнообразных
-                    изысканий.</p>
-
-                <p> Если у вас нет справки о доходах, получить микрозайм в Украине все равно можно в одной
-                    из
-                    микрофинансовых организаций.
-                    Дополнительную гарантию качества мы предоставляем в виде сопровождения проектов
-                    Государственной экспертизы, включая разделы, соответствующие техническому заданию, по
-                    выполнению инженерных изысканий.</p>
-
-                <p>Даже если Госэкспертиза выявляет недостатки, связанные с деятельностью наших заказчиков,
-                    мы
-                    готовы незамедлительно оказать помощь в проведении дополнительных инженерных изысканий.
-                </p>
-
-                <p>Какие МФО или ломбарды готовы кредитовать простых украинцев и выдавать им кредит онлайн
-                    на
-                    карту без отказа и проверок в интернете.</p>
-
-                <p>Наша компания работает на основании действующей лицензии и допусков на проведение
-                    исследований.
-                    Мы поможем разобраться с наиболее сложными проблемами, если заказчик доверит нам
-                    проведение
-                    изыскательских работ.</p>
-            </div>
-
-        </div>
+        <?php 
+        $article3 = get_field('mini-article3');
+        set_query_var( 'article', $article3 );
+        get_template_part('templates/mini', 'article'); 
+        ?>
     </div>
 </section>
 
@@ -400,104 +369,7 @@ if($works_gallery) {
 <section class="section-condition-payment">
     <div class="container">
         <h2 class="section-condition-payment__title">Условия оплаты</h2>
-        <p class="section-condition-payment__desc">Основным условием для работы с компанией Геолог-Краснодар
-            является создание условий для взаимовыгодного сотрудничества. Мы заботимся о максимальном
-            удобстве своих заказчиков, обеспечиваем их материалами высокого качества по любым инженерным
-            изысканиям в сочетании
-            с высоким уровнем сервиса. Очень важно, что мы принимаем оплату в практически любых формах.</p>
-
-        <div class="section-condition-payment-row condition-slider swiper">
-            <div class="swiper-wrapper">
-                <!--item-->
-                <div class="section-condition-payment-row__item swiper-slide">
-                    <div class="section-condition-payment-row__name">Наличная оплата</div>
-                    <div class="section-condition-payment-row__text">
-                        <p>Это простейшая форма оплаты, предполагающая передачу средств от заказчика к
-                            менеджеру
-                            нашей компании на основании подписанного договора. Оплата сопровождается
-                            оформлением
-                            всех необходимых для подтверждения оплаты документов.</p>
-                    </div>
-                </div>
-
-                <!--item-->
-                <div class="section-condition-payment-row__item swiper-slide">
-                    <div class="section-condition-payment-row__name">Безналичная форма расчета</div>
-                    <div class="section-condition-payment-row__text">
-                        <p>По безналичному расчету мы сотрудничаем только с юридическими организациями,
-                            которые
-                            осуществляют перевод средств по договору на счет компании Геолог-Краснодар.
-                            Оформление договора должно производиться с указанием реквизитов компании.</p>
-                    </div>
-                </div>
-
-                <!--item-->
-                <div class="section-condition-payment-row__item swiper-slide">
-                    <div class="section-condition-payment-row__name">Оплата банковскими картами Mastercard
-                        или
-                        Visa</div>
-                    <div class="section-condition-payment-row__text">
-                        <p>Один из наиболее простых и универсальных способов по перечислению оговоренных
-                            средств
-                            на счет компании Геолог-Краснодар. Можно оплатить на сайте компании в онлайн
-                            режиме,
-                            после заполнения специальной формы. </p>
-                    </div>
-                </div>
-
-                <!--item-->
-                <div class="section-condition-payment-row__item swiper-slide">
-                    <div class="section-condition-payment-row__name">Оплата денежным переводом</div>
-                    <div class="section-condition-payment-row__text">
-                        <p>Мы осуществляем прием денежных переводов посредством международных платежных
-                            систем
-                            Контакт, Юнистрим, Western Union и многих других. Следует учитывать процент,
-                            взимаемый платежной системой за услуги.</p>
-                    </div>
-                </div>
-
-                <!--item-->
-                <div class="section-condition-payment-row__item swiper-slide">
-                    <div class="section-condition-payment-row__name">Оплата электронным платежом</div>
-                    <div class="section-condition-payment-row__text">
-                        <p>У компании Геолог-Краснодар есть возможность принять необходимую сумму
-                            посредством
-                            популярной платежной системы Яндекс.Деньги или PayPal. Заказчик может
-                            воспользоваться одним из этих сервисов для оплаты наших услуг.</p>
-                    </div>
-                </div>
-
-                <!--item-->
-                <div class="section-condition-payment-row__item swiper-slide">
-                    <div class="section-condition-payment-row__name">Вариант, удобный заказчику</div>
-                    <div class="section-condition-payment-row__text">
-                        <p>Если вы не можете воспользоваться перечисленными выше вариантами, то можете
-                            воспользоваться тем способом, который удобен для вас. Остается лишь согласовать
-                            форму платежа с нашими менеджерами. </p>
-
-                        <p>По любым вопросам или для уточнения реквизитов компании связывайтесь с нашими
-                            специалистами.</p>
-                    </div>
-                </div>
-
-                <!--item-->
-                <div class="section-condition-payment-row__item swiper-slide">
-                    <div class="section-condition-payment-row__name">Вариант, удобный заказчику</div>
-                    <div class="section-condition-payment-row__text">
-                        <p>Если вы не можете воспользоваться перечисленными выше вариантами, то можете
-                            воспользоваться тем способом, который удобен для вас. Остается лишь согласовать
-                            форму платежа с нашими менеджерами. </p>
-
-                        <p>По любым вопросам или для уточнения реквизитов компании связывайтесь с нашими
-                            специалистами.</p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="swiper-scrollbar slider-scroll-bar"></div>
-
-            <div class="swiper-pagination slider-pagination"></div>
-        </div>
+        <?php get_template_part('templates/condition', 'payment');  ?>
     </div>
 </section>
 
@@ -507,295 +379,68 @@ if($works_gallery) {
     <div class="container">
         <div class="message messge_work">
             <h3 class="message-title"> Условия работы</h3>
-            <div>
-                <p>Компания Геолог-Краснодар работает на основе взаимовыгодного сотрудничества, после
-                    заключения
-                    Договора и внесения заказчиком авансового платежа.</p>
-            </div>
-            <div class="order-work">
-                <h3 class="message-title order-work__title">Порядок работ</h3>
-                <div class="order-work__items order-work-items">
-                    <!--item-->
-                    <div class="order-work__item order-work-item">
-                        <div class="order-work-item__number">
-                            1
-                        </div>
-                        <div class="order-work-item__body">
-                            <div class="order-work-item__name">Принимаем заявку</div>
-                            <div class="order-work-item__text"> Мы принимаем заявки на сайте или по
-                                телефону.</div>
-                        </div>
-                    </div>
-
-                    <!--item-->
-                    <div class="order-work__item order-work-item">
-                        <div class="order-work-item__number">
-                            2
-                        </div>
-                        <div class="order-work-item__body">
-                            <div class="order-work-item__name">Подписание договора, выезд на участок</div>
-                            <div class="order-work-item__text"> Подписание договора может состояться после
-                                выезда наших мастеров на объект заказчика для определения подъездных путей к
-                                месту работ и ознакомления с рельефом участка.</div>
-                        </div>
-                    </div>
-
-                    <!--item-->
-                    <div class="order-work__item order-work-item">
-                        <div class="order-work-item__number">
-                            3
-                        </div>
-                        <div class="order-work-item__body">
-                            <div class="order-work-item__name">Выполнение работ</div>
-                            <div class="order-work-item__text"> Подписав договор и получив предоплату,
-                                специалисты компании Геолог-Краснодар приступают к выполнению своих
-                                обязательств в течение максимум трех дней.</div>
-                        </div>
-                    </div>
-
-                    <!--item-->
-                    <div class="order-work__item order-work-item">
-                        <div class="order-work-item__number">
-                            4
-                        </div>
-                        <div class="order-work-item__body">
-                            <div class="order-work-item__name">Технический отчет</div>
-                            <div class="order-work-item__text"> Завершив изыскания на объекте, мы передаем
-                                заказчику технический отчет с содержанием материалов по всем произведенным
-                                изысканиям.</div>
-                        </div>
-                    </div>
-
-
-                    <!--item-->
-                    <div class="order-work__item order-work-item">
-                        <div class="order-work-item__number">
-                            4
-                        </div>
-                        <div class="order-work-item__body">
-                            <div class="order-work-item__name">Сдача работы</div>
-                            <div class="order-work-item__text"> По согласованию с заказчиками сдачу работ мы
-                                можем осуществлять поэтапно, передавая результаты по каждому завершенному
-                                изысканию.</div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <p>
-                        Достоинством компании Геолог-Краснодар является индивидуальное отношение ко всем
-                        заказчикам. Это заключается в индивидуальном обсуждении размера аванса, порядка и
-                        сроков
-                        работ, сопровождения и прохождения экспертизы и стоимости заказа с каждым из
-                        заказчиков.
-                    </p>
-                    <p>
-                        Оформить техническое задание для выполнения изысканий можно после скачивания нужного
-                        варианта шаблона для проведения работ, размещенных на нашем сайте.
-                    </p>
-                </div>
-
-
-            </div>
+            <?php get_template_part('templates/condition', 'work');  ?>
         </div>
     </div>
 </section>
+<?php 
+$serts = get_field('serts', 'option');
+if($serts) {
+    $sert_count = 1;
+?>
+    <!-- section sert-->
+    <section class="section-sert">
+        <div class="container">
+            <h2 class="section-sert__title"> Лицензии и серфтификаты</h2>
+            <div class="swiper sert-slider">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <?php foreach($serts as $sert) { ?>
+                        <!-- Slides -->
+                        <div class="reviews-slider-item swiper-slide">
+                            <a class="trigger-fancy" href="#gallery_<?php echo $sert_count; ?>">
+                                <img src="<?php echo $sert; ?>" />
+                            </a>
 
-<!-- section sert-->
-<section class="section-sert">
-    <div class="container">
-        <h2 class="section-sert__title"> Лицензии и серфтификаты</h2>
-        <div class="swiper sert-slider">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="reviews-slider-item swiper-slide">
-                    <a class="trigger-fancy" href="#gallery_1">
-                        <img src="./assets/images/review1.png" />
-                    </a>
-
-                    <div id="gallery_1" class="global-popup" style="display:none">
-                        <div class="global-popup__body">
-                            <img src="./assets/images/review1.png" />
+                            <div id="gallery_<?php echo $sert_count; ?>" class="global-popup" style="display:none">
+                                <div class="global-popup__body">
+                                    <img src="<?php echo $sert; ?>" />
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Slides -->
-                <div class="reviews-slider-item swiper-slide">
-                    <a class="trigger-fancy" href="#gallery_2">
-                        <img src="./assets/images/review1.png" />
-                    </a>
-
-                    <div id="gallery_2" class="global-popup" style="display:none">
-                        <div class="global-popup__body">
-                            <img src="./assets/images/review1.png" />
-                        </div>
-                    </div>
+                    <?php $sert_count++; } ?>
                 </div>
 
 
-                <!-- Slides -->
-                <div class="reviews-slider-item swiper-slide">
-                    <a class="trigger-fancy" href="#gallery_3">
-                        <img src="./assets/images/review1.png" />
-                    </a>
-                    <div id="gallery_3" class="global-popup" style="display:none">
-                        <div class="global-popup__body">
-                            <img src="./assets/images/review1.png" />
-                        </div>
+                <!-- If we need navigation buttons -->
+                <div class="sliders-arrows">
+                    <div class="swiper-button-prev arrow-slider-prev"><svg width="21" height="16"
+                            viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.985125 7.60637C0.594601 7.99689 0.594601 8.63006 0.985125 9.02058L7.34909 15.3845C7.73961 15.7751 8.37278 15.7751 8.7633 15.3845C9.15382 14.994 9.15382 14.3609 8.7633 13.9703L3.10645 8.31348L8.7633 2.65662C9.15382 2.2661 9.15382 1.63293 8.7633 1.24241C8.37278 0.851883 7.73961 0.851883 7.34909 1.24241L0.985125 7.60637ZM20.3076 7.31348L1.69223 7.31347L1.69223 9.31347L20.3076 9.31348L20.3076 7.31348Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                    <div class="swiper-button-next arrow-slider-next"><svg width="20" height="16"
+                            viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19.3899 8.70711C19.7804 8.31658 19.7804 7.68342 19.3899 7.29289L13.0259 0.928932C12.6354 0.538408 12.0022 0.538408 11.6117 0.928932C11.2212 1.31946 11.2212 1.95262 11.6117 2.34315L17.2686 8L11.6117 13.6569C11.2212 14.0474 11.2212 14.6805 11.6117 15.0711C12.0022 15.4616 12.6354 15.4616 13.0259 15.0711L19.3899 8.70711ZM0.0673828 9H18.6828V7H0.0673828V9Z"
+                                fill="white" />
+                        </svg>
                     </div>
                 </div>
-
-
-                <!-- Slides -->
-                <div class="reviews-slider-item swiper-slide">
-                    <a class="trigger-fancy" href="#gallery_4">
-                        <img src="./assets/images/review1.png" />
-                    </a>
-
-                    <div id="gallery_4" class="global-popup" style="display:none">
-                        <div class="global-popup__body">
-                            <img src="./assets/images/review1.png" />
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slides -->
-                <div class="reviews-slider-item swiper-slide">
-                    <a class="trigger-fancy" href="#gallery_5">
-                        <img src="./assets/images/review1.png" />
-                    </a>
-
-                    <div id="gallery_5" class="global-popup" style="display:none">
-                        <div class="global-popup__body">
-                            <img src="./assets/images/review1.png" />
-                        </div>
-                    </div>
-                </div>
-
 
             </div>
-
-
-            <!-- If we need navigation buttons -->
-            <div class="sliders-arrows">
-                <div class="swiper-button-prev arrow-slider-prev"><svg width="21" height="16"
-                        viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M0.985125 7.60637C0.594601 7.99689 0.594601 8.63006 0.985125 9.02058L7.34909 15.3845C7.73961 15.7751 8.37278 15.7751 8.7633 15.3845C9.15382 14.994 9.15382 14.3609 8.7633 13.9703L3.10645 8.31348L8.7633 2.65662C9.15382 2.2661 9.15382 1.63293 8.7633 1.24241C8.37278 0.851883 7.73961 0.851883 7.34909 1.24241L0.985125 7.60637ZM20.3076 7.31348L1.69223 7.31347L1.69223 9.31347L20.3076 9.31348L20.3076 7.31348Z"
-                            fill="white" />
-                    </svg>
-                </div>
-                <div class="swiper-button-next arrow-slider-next"><svg width="20" height="16"
-                        viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M19.3899 8.70711C19.7804 8.31658 19.7804 7.68342 19.3899 7.29289L13.0259 0.928932C12.6354 0.538408 12.0022 0.538408 11.6117 0.928932C11.2212 1.31946 11.2212 1.95262 11.6117 2.34315L17.2686 8L11.6117 13.6569C11.2212 14.0474 11.2212 14.6805 11.6117 15.0711C12.0022 15.4616 12.6354 15.4616 13.0259 15.0711L19.3899 8.70711ZM0.0673828 9H18.6828V7H0.0673828V9Z"
-                            fill="white" />
-                    </svg>
-                </div>
-            </div>
-
         </div>
-    </div>
-</section>
-
-
+    </section>
+<?php
+} 
+?>
 <!-- reviews-->
 <section class="section-reviews">
     <div class="container">
         <h2 class="section-reviews__title">Отзывы</h2>
-        <div class="swiper reviews-slider">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="reviews-slider-item swiper-slide">
-                    <a class="trigger-fancy" href="#gallery_1">
-                        <img src="./assets/images/review1.png" />
-                    </a>
-
-                    <div id="gallery_1" class="global-popup" style="display:none">
-                        <div class="global-popup__body">
-                            <img src="./assets/images/review1.png" />
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slides -->
-                <div class="reviews-slider-item swiper-slide">
-                    <a class="trigger-fancy" href="#gallery_2">
-                        <img src="./assets/images/review1.png" />
-                    </a>
-
-                    <div id="gallery_2" class="global-popup" style="display:none">
-                        <div class="global-popup__body">
-                            <img src="./assets/images/review1.png" />
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Slides -->
-                <div class="reviews-slider-item swiper-slide">
-                    <a class="trigger-fancy" href="#gallery_3">
-                        <img src="./assets/images/review1.png" />
-                    </a>
-                    <div id="gallery_3" class="global-popup" style="display:none">
-                        <div class="global-popup__body">
-                            <img src="./assets/images/review1.png" />
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Slides -->
-                <div class="reviews-slider-item swiper-slide">
-                    <a class="trigger-fancy" href="#gallery_4">
-                        <img src="./assets/images/review1.png" />
-                    </a>
-
-                    <div id="gallery_4" class="global-popup" style="display:none">
-                        <div class="global-popup__body">
-                            <img src="./assets/images/review1.png" />
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slides -->
-                <div class="reviews-slider-item swiper-slide">
-                    <a class="trigger-fancy" href="#gallery_5">
-                        <img src="./assets/images/review1.png" />
-                    </a>
-
-                    <div id="gallery_5" class="global-popup" style="display:none">
-                        <div class="global-popup__body">
-                            <img src="./assets/images/review1.png" />
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-
-            <!-- If we need navigation buttons -->
-            <div class="sliders-arrows">
-                <div class="swiper-button-prev arrow-slider-prev"><svg width="21" height="16"
-                        viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M0.985125 7.60637C0.594601 7.99689 0.594601 8.63006 0.985125 9.02058L7.34909 15.3845C7.73961 15.7751 8.37278 15.7751 8.7633 15.3845C9.15382 14.994 9.15382 14.3609 8.7633 13.9703L3.10645 8.31348L8.7633 2.65662C9.15382 2.2661 9.15382 1.63293 8.7633 1.24241C8.37278 0.851883 7.73961 0.851883 7.34909 1.24241L0.985125 7.60637ZM20.3076 7.31348L1.69223 7.31347L1.69223 9.31347L20.3076 9.31348L20.3076 7.31348Z"
-                            fill="white" />
-                    </svg>
-                </div>
-                <div class="swiper-button-next arrow-slider-next"><svg width="20" height="16"
-                        viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M19.3899 8.70711C19.7804 8.31658 19.7804 7.68342 19.3899 7.29289L13.0259 0.928932C12.6354 0.538408 12.0022 0.538408 11.6117 0.928932C11.2212 1.31946 11.2212 1.95262 11.6117 2.34315L17.2686 8L11.6117 13.6569C11.2212 14.0474 11.2212 14.6805 11.6117 15.0711C12.0022 15.4616 12.6354 15.4616 13.0259 15.0711L19.3899 8.70711ZM0.0673828 9H18.6828V7H0.0673828V9Z"
-                            fill="white" />
-                    </svg>
-                </div>
-            </div>
-
-        </div>
+        <?php get_template_part('templates/reviews');  ?>
     </div>
 </section>
 
