@@ -85,7 +85,7 @@
 					?>
 				</div>
 				<div class="footer-top__button">
-					<a class="site-btn site-btn_footer" href="javascript:void(0)">Отправить заявку</a>
+					<a class="site-btn site-btn_footer" href="#callback">Отправить заявку</a>
 				</div>
 			</div>
 		</div>
