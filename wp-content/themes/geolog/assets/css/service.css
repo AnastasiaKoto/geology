@@ -334,6 +334,7 @@
 
 .section-finishing-work-item {
     display: flex;
+    gap: 18px;
 }
 
 .section-finishing-work-item__image {
@@ -341,6 +342,7 @@
     border-radius: 24px;
     overflow: hidden;
     width: 300px;
+    flex-shrink: 0;
 }
 
 .section-finishing-work-item__image img {
@@ -755,6 +757,7 @@
     .section-finishing-work-item {
         display: flex;
         flex-direction: column-reverse;
+        gap: 0px;
     }
     .section-finishing-work__desc {
       margin-bottom: 43px;

@@ -1,0 +1,325 @@
+/*equipment */
+.page-navigation_equipment {
+    margin-bottom: 23px;
+}
+
+.section-page-equipment .section-page-equipment__desc {
+    max-width: 775px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 46px;
+    line-height: 25.6px;
+}
+
+.section-page-equipment-item {
+    display: grid;
+    grid-template-columns: 1fr 2.2fr;
+    gap: 24px;
+}
+
+.section-page-equipment-item__image {
+    overflow: hidden;
+    aspect-ratio: 382 / 275;
+    border-radius: 15px;
+    width: 382px;
+    max-height: 275px;
+}
+.section-page-equipment-item__image  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-page-equipment-item-message {
+    padding: 34px 47px 39px 53px;
+}
+
+.section-page-equipment-item__message {
+    margin-bottom: 0px;
+}
+
+.section-page-equipment-item__message p:not(:last-child) {
+    margin-bottom: 26px;
+}
+
+.section-page-equipment-rows {
+    display: grid;
+    gap: 17px;
+}
+
+.section-page-equipment {
+    padding-bottom: 62px;
+}
+
+/*laboratory */
+.section-laboratory {
+    padding-bottom: 62px;
+}
+
+.section-laboratory .section-laboratory__title {
+    text-align: center;
+    margin-bottom: 47px;
+}
+
+.section-laboratory-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, calc(25% - 20px));
+    gap: 20px;
+}
+
+.section-laboratory-row-item {
+    display: block;
+    text-align: center;
+}
+
+.section-laboratory-row-item__image {
+    aspect-ratio: 285 / 205;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 23px;
+    background-color: white;
+}
+
+.section-laboratory-row-item__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section-laboratory-eco .section-laboratory-row-item__image img {
+    object-fit: contain;
+}
+.section-geo-service .section-laboratory-row-item__image img {
+    object-fit: contain;
+}
+
+.section-laboratory-row-item__name {
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.section-laboratory-pole-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 639px;
+    gap: 20px;
+}
+
+.section-laboratory-pole__title {
+    text-align: center;
+    margin-bottom: 47px;
+}
+
+.section-laboratory-pole {
+    padding-bottom: 62px;
+}
+
+.section-laboratory-eco__title {
+    margin-bottom: 47px;
+    text-align: center;
+}
+
+.section-geo-service__row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, calc(33% - 20px));
+    gap: 20px;
+    max-width: 895px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-geo-service__title {
+    text-align: center;
+    margin-bottom: 47px;
+}
+
+.section-laboratory-eco {
+    padding-bottom: 62px;
+}
+
+.section-geo-service {
+    padding-bottom: 114px;
+}
+
+/*tz page */
+.section-page-tz{
+    padding-bottom: 44px;
+}
+.section-example-row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,calc(25% - 36px));
+    gap:36px
+}
+.section-example__desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.section-example__desc h4{
+    margin-bottom: 0px;
+    text-align: center;
+}
+.section-example__desc a{
+    color: #3EB250;
+    text-decoration: underline;
+}
+.page-navigation_tz{
+    margin-bottom: 25px;
+}
+.section-example__desc{
+    margin-bottom: 37px;
+}
+.section-example-row-item >a {
+    display: block;
+}
+.section-example-row-item .section-example-row-item__image{
+    aspect-ratio: 238 / 337;
+    width: 100%;
+    border-radius: 13px; 
+    overflow: hidden;
+    max-height: 337px;
+}   
+.section-example-row-item__image img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.section-example {
+    padding-bottom: 44px;
+}
+.section-example-fourth{
+    padding-bottom: 92px;
+}
+
+@media (max-width:767.98px) {
+    .section-page-equipment-item {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+    .page-navigation_equipment {
+        margin-bottom: 10px;
+    }
+    .section-page-equipment .section-page-equipment__desc {
+        line-height: 21px;
+        margin-bottom: 25px;
+    }
+    .section-page-equipment-item__image {
+        overflow: hidden;
+        aspect-ratio: 360 / 240;
+        width: 100%;
+     
+    }
+    .section-page-equipment-item-message {
+        padding: 26px 24px 32px 24px;
+    }
+    .section-page-equipment-item__desc{
+        line-height: 21px;
+    }
+    .section-laboratory-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .section-laboratory .section-laboratory__title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .section-page-equipment {
+        padding-bottom: 50px;
+    }
+    .section-laboratory-row-item__image {
+        aspect-ratio: 330 / 220;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        overflow: hidden;
+        
+    }
+  
+    .section-laboratory-row-item__name {
+        font-weight: 500;
+        line-height: 20px;
+    }
+    .section-laboratory-row{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .section-laboratory-pole-row {
+        padding-left: 10px;
+        padding-right: 10px;
+        grid-template-columns: 1fr;
+    }
+    .section-laboratory-pole__title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .section-laboratory-pole {
+        padding-bottom: 40px;
+    }
+    .section-laboratory-eco__title {
+        margin-bottom: 20px;
+       
+    }
+    .section-geo-service__title {
+        margin-bottom: 20px;
+    }
+    .section-laboratory-eco {
+        padding-bottom: 40px;
+    }
+    .section-laboratory {
+        padding-bottom: 40px;
+    }
+    .section-geo-service__row{
+        grid-template-columns: 1fr;
+    }
+    /*tz */
+    .page-navigation_tz {
+        margin-bottom: 10px;
+    }
+    .section-page-tz{
+        padding-bottom: 24px;
+    }
+    .section-example__desc h4 {
+        line-height: 24px;
+    }
+    .section-example__desc {
+        gap: 15px;
+        margin-bottom: 26px;
+    }
+    .section-example-row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,calc(50% - 10px));
+        gap: 10px;
+    }
+    .section-example {
+        padding-bottom: 35px;
+    }
+    .section-example-fourth {
+        padding-bottom: 80px;
+    }
+    .section-example-row-item .section-example-row-item__image {
+        aspect-ratio: 175 / 248;
+        
+        width: 100%;
+    }
+   
+}
+@media (min-width:768px) and (max-width:991px) {
+    .section-page-equipment-item {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    .section-example-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+}
