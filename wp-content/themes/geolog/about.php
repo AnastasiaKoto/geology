@@ -9,7 +9,10 @@ get_header();
 
     <!-- breadcrumbs-->
     <div class="container">
-        <?php get_template_part('templates/breadcrumbs') ?>
+        <!-- wrapper for margin-->
+        <div class="page-navigation">
+            <?php get_template_part('templates/breadcrumbs') ?>
+        </div>
     </div>
 
     <!-- about section-->
