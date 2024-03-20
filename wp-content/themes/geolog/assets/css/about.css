@@ -274,6 +274,27 @@
 .section-detail-article__mobile-title{
     display: none;
 }
+
+
+/*category services */
+.page-navigation_category-articles{
+    margin-bottom: 36px;
+}
+.section-categories-article__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 81px;
+}
+.section-categories-article__list li a{
+    text-decoration: underline;
+    transition: all 0.4s ease;
+}
+.section-categories-article__list li a:hover{
+    color: #3EB250;
+}
+
 @media (max-width:767.98px) {
     .section-company-about-desc {
         display: grid;
@@ -451,6 +472,12 @@
     }
     .section-detail-article__message {
         margin-bottom: 50px;
+    }
+    .page-navigation_category-articles{
+        margin-bottom: 18px;
+    }
+    .section-categories-article__list{
+        font-size: 16px;
     }
 }
 
