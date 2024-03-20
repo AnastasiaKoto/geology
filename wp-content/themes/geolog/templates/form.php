@@ -14,7 +14,7 @@
 
         <div class="callback-form__input  callback-form__checkbox">
             <input id="political_3" type="checkbox" name="agree" checked>
-            <label for="politica_3"></label>
+            <label for="political_3"></label>
             <p>Нажимая на кнопку, Вы соглашаетесь с <a href="javascript:void(0)"> Политикой
                     конфиденциальности </a></p>
         </div>

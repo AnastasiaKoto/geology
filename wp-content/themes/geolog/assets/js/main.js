@@ -36,7 +36,7 @@ jQuery(document).ready(function ($) {
   /* reviews slider */
   const reviewsSlider = new Swiper('.reviews-slider', {
     // Optional parameters
-    slidesOffsetBefore:0,
+    slidesOffsetBefore: 0,
     navigation: {
       nextEl: '.arrow-slider-next',
       prevEl: '.arrow-slider-prev',
@@ -45,9 +45,9 @@ jQuery(document).ready(function ($) {
       0: {
         slidesPerView: "auto",
         centeredSlider: true,
-        slidesOffsetBefore:30,
+        slidesOffsetBefore: 30,
         spaceBetween: 9,
-        initialSlide:1,
+        initialSlide: 1,
       },
       767: {
         slidesPerView: 3,
@@ -102,7 +102,7 @@ jQuery(document).ready(function ($) {
   const empoloyersSlider = new Swiper('.employers-slider', {
     // Optional parameters
     observer: true,
-    slidesOffsetBefore:0,
+    slidesOffsetBefore: 0,
     breakpoints: {
       0: {
         initialSlide: 1,
@@ -110,13 +110,13 @@ jQuery(document).ready(function ($) {
         centeredSlider: true,
         loop: false,
         spaceBetween: 18,
-        slidesOffsetBefore:80
+        slidesOffsetBefore: 80
 
-    
+
       },
 
       576: {
-        slidesOffsetBefore:0,
+        slidesOffsetBefore: 0,
         initialSlide: 1,
         slidesPerView: 2,
         centeredSlider: true,
@@ -250,13 +250,13 @@ jQuery(document).ready(function ($) {
   });
 
   const conditionSlider = new Swiper('.condition-slider', {
-      // Optional parameters
-   
+    // Optional parameters
+
     scrollbar: {
-      el:false
+      el: false
     },
     breakpoints: {
-     
+
       // when window width is >= 320px
       0: {
 
@@ -273,7 +273,7 @@ jQuery(document).ready(function ($) {
         spaceBetween: 9,
         scrollbar: false,
         grid: false,
-        
+
       }
       ,
       1200: {
@@ -412,30 +412,30 @@ jQuery(document).ready(function ($) {
       prevEl: '.arrow-slider-prev',
     },
     breakpoints: {
-    0: {
-      spaceBetween: 5,
-      slidesPerView: 2.5,
+      0: {
+        spaceBetween: 5,
+        slidesPerView: 2.5,
 
-    },
-    576: {
-      slidesPerView: 3,
-      spaceBetween: 12,
-    },
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 12,
-    },
-    1200: {
-      loop: false,
-      slidesPerView: 4,
-      spaceBetween: 30,
-      // Navigation arrows
-      navigation: {
-        nextEl: '.arrow-slider-next',
-        prevEl: '.arrow-slider-prev',
       },
+      576: {
+        slidesPerView: 3,
+        spaceBetween: 12,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 12,
+      },
+      1200: {
+        loop: false,
+        slidesPerView: 4,
+        spaceBetween: 30,
+        // Navigation arrows
+        navigation: {
+          nextEl: '.arrow-slider-next',
+          prevEl: '.arrow-slider-prev',
+        },
+      }
     }
-  }
   });
 
 
@@ -445,7 +445,7 @@ jQuery(document).ready(function ($) {
   });
 
   //отправляем форму
-  $('form .callback-form__btn').each(function() {
+  $('form .callback-form__btn').each(function () {
     let formSubmitted = false;
     $(this).on('click', function (e) {
       e.preventDefault();
@@ -455,7 +455,7 @@ jQuery(document).ready(function ($) {
         let policy = form.find('input[name="agree"]');
         form.find('.error').removeClass('error');
         form.find('.form__error').remove();
-  
+
         if (policy.is(':checked')) {
           formSubmitted = true;
           $.ajax({
@@ -468,15 +468,22 @@ jQuery(document).ready(function ($) {
               $.each(result.errors, function (e, index) {
                 form.find('input[name="' + e + '"]').addClass('error');
                 form
-                .find('input[name="' + e + '"]')
-                .parent()
-                .append('<div class="form__error">' + index[0] + '</div>');
+                  .find('input[name="' + e + '"]')
+                  .parent()
+                  .append('<div class="form__error">' + index[0] + '</div>');
               });
             } else {
               if (result.success == true) {
                 form[0].reset();
-                $('.modal_ok').addClass('active');
-                form.find('.global_err').removeClass('active');
+                /*close all windows */
+                Fancybox.close();
+                /*open modal success*/
+                new Fancybox([
+                  {
+                    src: '#success-form',
+                    type: 'inline',
+                  },
+                ])
               }
             }
           });
@@ -490,6 +497,8 @@ jQuery(document).ready(function ($) {
       }
     });
   });
+
+
 
 
 });

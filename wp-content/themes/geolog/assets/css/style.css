@@ -812,6 +812,7 @@ ul {
     height: 56px;
     padding-left: 23px;
     outline: none;
+    max-height: 56px;
 }
 
 .callback-form__btn {
@@ -876,6 +877,15 @@ ul {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
+
+form[name='modal_form'] .callback-form__checkbox input:checked~label::before {
+    display: inline-flex;
+    content: url('data:image/svg+xml;utf-8,<svg width="10px" height="7px"  viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M9.78029 0.215643C9.92097 0.353604 10 0.540695 10 0.735772C10 0.930849 9.92097 1.11794 9.78029 1.2559L4.15573 6.7701C4.0814 6.84298 3.99315 6.9008 3.89603 6.94025C3.7989 6.9797 3.6948 7 3.58967 7C3.48454 7 3.38044 6.9797 3.28331 6.94025C3.18619 6.9008 3.09794 6.84298 3.02361 6.7701L0.229091 4.0309C0.157419 3.96303 0.100251 3.88186 0.0609233 3.7921C0.0215951 3.70234 0.000894167 3.60581 2.83329e-05 3.50812C-0.000837501 3.41044 0.0181492 3.31357 0.0558804 3.22315C0.0936116 3.13274 0.149332 3.0506 0.21979 2.98152C0.290248 2.91245 0.374032 2.85782 0.466254 2.82083C0.558477 2.78384 0.65729 2.76523 0.756929 2.76607C0.856568 2.76692 0.955036 2.78722 1.04659 2.82577C1.13814 2.86433 1.22095 2.92038 1.29017 2.99064L3.58942 5.24478L8.71871 0.215643C8.7884 0.147279 8.87115 0.0930467 8.96222 0.0560457C9.0533 0.0190446 9.15092 0 9.2495 0C9.34809 0 9.44571 0.0190446 9.53678 0.0560457C9.62786 0.0930467 9.7106 0.147279 9.78029 0.215643Z" fill="white"/>  </svg>');
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 2px;
 }
 
 .callback-form__checkbox input:checked~label::before {
