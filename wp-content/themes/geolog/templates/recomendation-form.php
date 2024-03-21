@@ -54,11 +54,11 @@
                     </div>
 
                     <div class="form-recomendation__privacy">
-                        <div>
+                       
                             <input checked type="checkbox" name="agree" id="agree">
                             <label for="agree"> </label>
 
-                        </div>
+                       
                         <p> Нажимая на кнопку, Вы соглашаетесь
                             с <a href="javascript:void(0)"> Политикой конфиденциальности </a></p>
                     </div>
