@@ -500,7 +500,6 @@ jQuery(document).ready(function ($) {
             }
           });
         } else {
-          console.log('политика не заполнена');
           policy.parent().addClass('error');
           policy.parent().append('<div class="form__error">Это обязательное поле</div>');
         }
@@ -531,6 +530,7 @@ jQuery(document).ready(function ($) {
             formSubmitted = false;
             if (result.errors) {
               $.each(result.errors, function (e, index) {
+                
                 form.find('input[name="' + e + '"]').addClass('error');
                 form
                   .find('input[name="' + e + '"]')
@@ -553,7 +553,6 @@ jQuery(document).ready(function ($) {
             }
           });
         } else {
-          console.log('политика не заполнена');
           policy.parent().addClass('error');
           policy.parent().append('<div class="form__error">Это обязательное поле</div>');
         }

@@ -153,7 +153,7 @@ get_header();
                         </a>
 
                         <!--item-->
-                        <a href="#success-form" class="trigger-fancy section-information__item section-information-item">
+                        <a href="#modal-recomendation" class="trigger-fancy section-information__item section-information-item">
                             <div class="section-information-item__image">
                                 <img src="/wp-content/themes/geolog/assets/images/info2.png">
                             </div>
@@ -162,7 +162,7 @@ get_header();
 
 
                         <!--item-->
-                        <a href="javascript:void(0)" class="section-information__item section-information-item">
+                        <a href="#modal-recomendation" class="trigger-fancy section-information__item section-information-item">
                             <div class="section-information-item__image">
                                 <img src="/wp-content/themes/geolog/assets/images/info3.png">
                             </div>
@@ -171,7 +171,7 @@ get_header();
                         </a>
 
                         <!--item-->
-                        <a href="javascript:void(0)" class="section-information__item section-information-item">
+                        <a href="#modal-recomendation" class="trigger-fancy section-information__item section-information-item">
                             <div class="section-information-item__image">
                                 <img src="/wp-content/themes/geolog/assets/images/info4.png">
                             </div>
