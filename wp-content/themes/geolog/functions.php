@@ -103,3 +103,4 @@ add_filter( 'wpseo_breadcrumb_single_link', 'add_svg_separator', 10, 2 );
 
 //подключаем файлы
 require __DIR__ . '/include/all_forms.php';
+require __DIR__ . '/include/recomendation-form.php';

@@ -510,6 +510,58 @@ jQuery(document).ready(function ($) {
     });
   });
 
+  // Send recomendation form
+  $("form[name='form-recomendation'").submit(function (e) {
+      e.preventDefault();
+      let form=$(this);
+      let formSubmitted = false;
+      if (formSubmitted == false) {
+        form.find('.global_err').removeClass('active');
+        let policy = form.find('input[name="agree"]');
+        form.find('.error').removeClass('error');
+        form.find('.form__error').remove();
+
+        if (policy.is(':checked')) {
+          formSubmitted = true;
+          $.ajax({
+            url: '/wp-admin/admin-ajax.php',
+            data: form.serialize() + '&action=callback-recomend',
+            type: 'POST',
+          }).done(function (result) {
+            formSubmitted = false;
+            if (result.errors) {
+              $.each(result.errors, function (e, index) {
+                form.find('input[name="' + e + '"]').addClass('error');
+                form
+                  .find('input[name="' + e + '"]')
+                  .parent()
+                  .append('<div class="form__error">' + index[0] + '</div>');
+              });
+            } else {
+              if (result.success == true) {
+                form[0].reset();
+                /*close all windows */
+                Fancybox.close();
+                /*open modal success*/
+                new Fancybox([
+                  {
+                    src: '#success-form',
+                    type: 'inline',
+                  },
+                ])
+              }
+            }
+          });
+        } else {
+          console.log('политика не заполнена');
+          policy.parent().addClass('error');
+          policy.parent().append('<div class="form__error">Это обязательное поле</div>');
+        }
+      } else {
+        form.find('.global_err').addClass('active');
+      }
+  });
+
 
 
 
