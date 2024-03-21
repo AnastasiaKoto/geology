@@ -89,3 +89,4 @@ class Custom_Walker_Nav_Menu extends Walker_Nav_Menu {
 
 //подключаем файлы
 require __DIR__ . '/include/all_forms.php';
+require __DIR__ . '/include/recomendation-form.php';
