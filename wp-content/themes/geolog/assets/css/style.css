@@ -40,6 +40,10 @@
     font-weight: 400;
 }
 
+.fancybox__container:not(.is-compact) .fancybox__slide.has-close-btn {
+    padding-top: 60px;
+}
+
 /*please add */
 .svg-separator:last-of-type {
     display: none;
@@ -3268,6 +3272,11 @@ form[name='modal_form'] .callback-form__checkbox input:checked~label::before {
         right: 10px;
     }
 
+    .global-popup  .gallery-popup .f-button.is-close-btn {
+        top: -40px;
+        right:9px;
+    }
+
     /* .section-reviews .reviews-slider-item.swiper-slide{
     width: 50% !important;
 } */
@@ -3309,6 +3318,21 @@ form[name='modal_form'] .callback-form__checkbox input:checked~label::before {
     .global-popup .f-button.is-close-btn {
         top: 10px;
         right: 10px;
+    }
+    .global-popup .gallery-popup .f-button.is-close-btn {
+        top: -35px;
+        right: -35px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .global-popup .gallery-popup  .f-button svg {
+        width: 15px;
+        height: 15px;
+        stroke: #3EB250;
+    }
+    .gallery-popup {
+        max-width: 80%;
     }
 
     .slider-pagination {
@@ -3489,9 +3513,10 @@ form[name='modal_form'] .callback-form__checkbox input:checked~label::before {
 
 @media (min-width:1200px) and (max-width:1399.98px) {
     .global-popup .f-button.is-close-btn {
-        top: 10px;
-        right: 10px;
+        top: -50px;
+        right: -50px;
     }
+    
 }
 
 @media (max-width:390px) {
