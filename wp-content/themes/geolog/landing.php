@@ -489,7 +489,7 @@ get_header();
     </section>
 
     <!-- calculate-->
-    <section class="section-calculate">
+    <section class="section-calculate" id="calculator">
         <div class="container">
             <h2 class="section-calculate__title"> Калькулятор</h2>
             <div class="section-calculate__body">
