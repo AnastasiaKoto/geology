@@ -41,6 +41,9 @@
 }
 
 /*please add */
+.svg-separator:last-of-type {
+    display: none;
+}
 .callback-form__input:nth-child(1),
 .callback-form__input:nth-child(2) {
     flex-direction: column;
