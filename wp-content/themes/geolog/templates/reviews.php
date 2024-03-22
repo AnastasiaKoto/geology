@@ -1,6 +1,7 @@
 <?php 
 $reviews = get_field('review_scans', 'option');
 if($reviews) {
+    $rev_count = 1;
 ?>
 <div class="swiper reviews-slider">
     <!-- Additional required wrapper -->
@@ -10,17 +11,18 @@ if($reviews) {
         ?>
             <!-- Slides -->
             <div class="reviews-slider-item swiper-slide">
-                <a class="trigger-fancy" href="#gallery_1">
+                <a class="trigger-fancy" href="#gallery_<?php echo $rev_count; ?>">
                     <img src="<?php echo $review; ?>" />
                 </a>
 
-                <div id="gallery_1" class="gallery-popup" style="display:none">
+                <div id="gallery_<?php echo $rev_count; ?>" class="gallery-popup" style="display:none">
                     <div class="global-popup__body">
                         <img src="<?php echo $review; ?>" />
                     </div>
                 </div>
             </div>
         <?php 
+        $rev_count++;
         } 
         ?>
     </div>
