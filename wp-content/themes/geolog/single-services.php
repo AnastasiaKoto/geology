@@ -402,7 +402,7 @@ if($serts) {
                                 <img src="<?php echo $sert; ?>" />
                             </a>
 
-                            <div id="gallery_<?php echo $sert_count; ?>" class="global-popup" style="display:none">
+                            <div id="gallery_<?php echo $sert_count; ?>" class="gallery-popup" style="display:none">
                                 <div class="global-popup__body">
                                     <img src="<?php echo $sert; ?>" />
                                 </div>

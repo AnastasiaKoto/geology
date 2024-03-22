@@ -192,7 +192,7 @@ jQuery(document).ready(function ($) {
       },
       1200: {
         loop: true,
-        slidesPerView: 3,
+        slidesPerView: 4,
         spaceBetween: 12,
       }
 
