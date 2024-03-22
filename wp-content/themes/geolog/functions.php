@@ -28,8 +28,8 @@ function all_styles() {
     wp_enqueue_style('style-css', '/wp-content/themes/geolog/assets/css/style.css' );
     wp_enqueue_style('service-css', '/wp-content/themes/geolog/assets/css/service.css' );
     wp_enqueue_style( 'about_css', '/wp-content/themes/geolog/assets/css/about.css' );
-    wp_enqueue_style( 'about_css', '/wp-content/themes/geolog/assets/css/prices.css' );
-    wp_enqueue_style( 'about_css', '/wp-content/themes/geolog/assets/css/equipment.css' );
+    wp_enqueue_style( 'prices_css', '/wp-content/themes/geolog/assets/css/prices.css' );
+    wp_enqueue_style( 'equipment_css', '/wp-content/themes/geolog/assets/css/equipment.css' );
 }
 function all_js() {
     wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.7.1.min.js');
