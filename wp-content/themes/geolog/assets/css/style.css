@@ -396,7 +396,13 @@ ul {
     height: 20px;
 
 }
+#menu-menyu-uslug-1 >li >a:not(:has(~ .dropdown-menu)){
+    display: none;
+}
 
+#menu-menyu-uslug >li >a:not(:has(~ .sub-menu)){
+    display: none;
+}
 
 
 .header-location__place svg:nth-of-type(2) {
@@ -635,7 +641,6 @@ ul {
 
 .bottom-header__list {
     display: flex;
-    justify-content: space-between;
     gap: 40px;
     font-weight: 600;
     line-height: 21.7px;
@@ -659,11 +664,14 @@ ul {
 .bottom-header__list>li {
     position: relative;
     padding-bottom: 12px;
+
 }
 
 .bottom-header__list {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 19.07px;
+    font-weight: 600;
+    line-height: 21px
 }
 
 .dropdown-menu_header-bottom__title {
