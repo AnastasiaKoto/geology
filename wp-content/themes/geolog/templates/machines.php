@@ -39,6 +39,6 @@ if ($machines->have_posts()) {
 wp_reset_postdata(); ?>
 
 <div class="section-equipment-all">
-    <a class="site-btn-2 site-btn-2_eqiupment" href="javascript:void(0)">Смотреть все
+    <a class="site-btn-2 site-btn-2_eqiupment" href="/machines/">Смотреть все
         оборудование</a>
 </div>
