@@ -2,7 +2,14 @@
 $args = array(
     'post_type'      => 'machines',
     'post_status'    => 'publish',
-    'posts_per_page' => -1,
+    'posts_per_page' => 3,
+    'tax_query' => array(
+        array(
+            'taxonomy' => 'machine_category',
+            'field'    => 'slug',
+            'terms'    => 'osnovnaya',
+        ),
+    ),
 );
 
 $machines = new WP_Query($args);
@@ -23,9 +30,11 @@ if ($machines->have_posts()) {
                 <div class="section-equipment-item__title">
                     <?php the_title(); ?>
                 </div>
+                <?php if(get_field('m_short-descr')) { ?>
                 <div class="section-equipment-item__text">
-                    <?php the_content(); ?>
+                    <?php echo get_field('m_short-descr'); ?>
                 </div>
+                <?php } ?>
             </div>
         <?php 
         }
