@@ -109,34 +109,6 @@ get_header();
     $informations = get_field('information');
     if ($informations) {
         ?>
-        <?/*
-          <!-- Information-->
-          <section class="section-information">
-              <div class="container">
-                  <div class="section-information__inner">
-                      <h2 class="section-information__title"> Информация</h2>
-                      <div class="section-information__row">
-                          <?php
-                          foreach($informations as $information) {
-                              //var_dump($information);
-                              $post_id = $information->ID;
-                          ?>
-                          <!--item-->
-                          <a href="<?php echo get_permalink($post_id); ?>" class="section-information__item section-information-item">
-                              <div class="section-information-item__image">
-                                  <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id( $post_id )); ?>">
-                              </div>
-                              <div class="section-information-item__name"><?php echo $information->post_title; ?></div>
-                          </a>
-                          <?php
-                          }
-                          ?>
-                      </div>
-                  </div>
-              </div>
-          </section>
-          
-          */ ?>
         <!-- Information-->
         <section class="section-information">
             <div class="container">
@@ -144,8 +116,8 @@ get_header();
                     <h2 class="section-information__title"> Информация</h2>
                     <div class="section-information__row">
                         <!--item-->
-                        <a href="#modal-recomendation"
-                            class="trigger-fancy section-information__item section-information-item">
+                        <a href="/metody-izyskanij/"
+                            class="section-information__item section-information-item">
                             <div class="section-information-item__image">
                                 <img src="/wp-content/themes/geolog/assets/images/info1.png">
                             </div>
@@ -153,7 +125,7 @@ get_header();
                         </a>
 
                         <!--item-->
-                        <a href="#modal-recomendation" class="trigger-fancy section-information__item section-information-item">
+                        <a href="/terminy-geologii/" class="section-information__item section-information-item">
                             <div class="section-information-item__image">
                                 <img src="/wp-content/themes/geolog/assets/images/info2.png">
                             </div>
@@ -171,7 +143,7 @@ get_header();
                         </a>
 
                         <!--item-->
-                        <a href="#modal-recomendation" class="trigger-fancy section-information__item section-information-item">
+                        <a href="/tehnicheskoe-zadanie/" class="section-information__item section-information-item">
                             <div class="section-information-item__image">
                                 <img src="/wp-content/themes/geolog/assets/images/info4.png">
                             </div>
