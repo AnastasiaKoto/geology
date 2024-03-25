@@ -106,7 +106,7 @@ get_header();
                                 $childrens->the_post();
                                 ?>
                                 <!--item-->
-                                <a href="#lab_<?php echo $ch_count; ?>" class="trigger-fancy section-laboratory-row__item section-laboratory-row-item">
+                                <a href="#<?php echo $term->slug . '_' . $ch_count; ?>" class="trigger-fancy section-laboratory-row__item section-laboratory-row-item">
                                     <div class="section-laboratory-row-item__image">
                                         <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
                                     </div>
@@ -114,7 +114,7 @@ get_header();
                                         <?php the_title(); ?>
                                     </div>
 
-                                    <div id="lab_<?php echo $ch_count; ?>" class="gallery-popup" style="display:none">
+                                    <div id="<?php echo $term->slug . '_' . $ch_count; ?>" class="gallery-popup" style="display:none">
                                         <div class="global-popup__body">
                                             <img src="<?php echo get_the_post_thumbnail_url(); ?>" />
                                         </div>
