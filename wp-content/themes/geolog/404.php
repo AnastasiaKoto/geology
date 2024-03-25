@@ -19,7 +19,7 @@ get_header();
 		<div class="container">
 			<div class="section-404-wrappper">
 				<div class="section-404__image">
-					<img src="./assets/images/404.png" alt="404">
+					<img src="/wp-content/themes/geolog/assets/images/404.png" alt="404">
 				</div>
 				<div class="section-404__message">
 					К сожалению, страница не найдена
