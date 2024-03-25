@@ -89,6 +89,8 @@
 
 /*end please add */
 /* modal recomendation */
+
+
 .recomendation-popup {
     padding: 32px 52px 44px;
     box-shadow: 0px 13px 23.899999618530273px 0px #00000008;
@@ -1983,6 +1985,9 @@ form[name='modal_form'] .callback-form__checkbox input:checked~label::before {
     right: 10px;
     background-color: #F4F4F4;
 }
+.is-compact .fancybox__content>.f-button.is-close-btn {
+    --f-button-outline-color: none;
+}
 
 /*responsive */
 @media (min-width:767.98px) and (max-width:1399.98px) {
@@ -1992,6 +1997,8 @@ form[name='modal_form'] .callback-form__checkbox input:checked~label::before {
 }
 
 @media (max-width:767.98px) {
+
+  
     .mobile-menu__socials .site-btn {
         transition: background 0.4s ease;
     }
@@ -2308,7 +2315,7 @@ form[name='modal_form'] .callback-form__checkbox input:checked~label::before {
         right: 0;
         bottom: 0;
         top: 0;
-        background: rgba(0, 0, 0, 0.7);
+        background: rgba(0, 0, 0, 0.4);
         z-index: 1;
     }
 
@@ -2413,6 +2420,7 @@ form[name='modal_form'] .callback-form__checkbox input:checked~label::before {
         padding-top: 70px;
         padding-bottom: 54px;
         margin-bottom: 40px;
+        background-position: top  left 30%;
     }
 
     h2 {
@@ -2485,7 +2493,7 @@ form[name='modal_form'] .callback-form__checkbox input:checked~label::before {
         font-size: 14px;
         line-height: 19px;
         max-width: 90%;
-
+        text-align: center;
     }
 
     .section-services {
@@ -3232,6 +3240,15 @@ form[name='modal_form'] .callback-form__checkbox input:checked~label::before {
 
     .section-employers__item.swiper-slide {
         width: 58%;
+        height: auto;
+    }
+    .section-employers-item__btn{
+        display: flex;
+        align-items: flex-end;
+        flex-grow: 1;
+    }
+    .section-employers-item__btn >a{
+        flex-shrink: 0;
     }
 
     .section-employers-item__name {

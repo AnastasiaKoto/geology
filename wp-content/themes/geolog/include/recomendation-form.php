@@ -2,7 +2,7 @@
 add_action( 'wp_ajax_callback-recomend', 'callback_recomend' );
 add_action( 'wp_ajax_nopriv_callback-recomend', 'callback_recomend' );
 function callback_recomend(){
-
+    function callback_recomend(){
     $my_error = new WP_Error();
     $message = [];
     $name = htmlspecialchars($_POST['name']);
@@ -89,4 +89,5 @@ function callback_recomend(){
     wp_send_json($message);
 
     wp_die();
+}
 }
