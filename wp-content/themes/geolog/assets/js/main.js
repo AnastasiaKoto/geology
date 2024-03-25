@@ -563,5 +563,13 @@ jQuery(document).ready(function ($) {
 
 
 
+  /* click on header menu in  calculator */
+
+  $("a[href='#calculator']").click(function(e){
+     if(window.location.pathname!=="/"){
+      e.preventDefault();
+      window.location.href="/#calculator";
+     }
+  });
 
 });
