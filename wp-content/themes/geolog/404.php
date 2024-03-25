@@ -11,7 +11,6 @@
 
 get_header();
 ?>
-
 <!-- Begin content-->
 <div class="content">
 	<!--404-->
@@ -32,6 +31,5 @@ get_header();
 		</div>
 	</section>
 </div> <!-- end content-->
-
 <?php
 get_footer();

@@ -393,6 +393,10 @@
     .site-btn-2_404{
         padding: 14px;
     }
+    .gallery-popup {
+        
+        max-width: 95%;
+    }
 }
 
 

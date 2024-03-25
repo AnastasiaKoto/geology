@@ -257,8 +257,12 @@
     margin-bottom: 81px;
 }
 .section-detail-article__message .section-messages-service__stages {
-    gap: 36px;
+    /* gap: 36px; */
+    gap: 0px;
     margin-bottom: 0px;
+}
+.section-detail-article__message .section-messages-service__stages h4:not(:nth-of-type(1)){
+    margin-top: 36px;
 }
 .section-detail-article__message  ul {
     margin-top: 0px;
@@ -294,8 +298,16 @@
 .section-categories-article__list li a:hover{
     color: #3EB250;
 }
+.page-navigation_detail h2{
+    display: none;
+}
+
 
 @media (max-width:767.98px) {
+    .page-navigation_detail h2 {
+        display: block;
+        margin-bottom: 31px;
+    }
     .section-company-about-desc {
         display: grid;
         grid-template-columns: 1fr;
@@ -443,10 +455,10 @@
         aspect-ratio: 360 / 240;
         width: 100%;
     }
-    .section-detail-article__mobile-title{
+    /* .section-detail-article__mobile-title{
         display: block;
         margin-bottom: 31px;
-    }
+    } */
     .page-navigation_detail {
         gap: 9px;
         margin-bottom: 9px;
@@ -479,6 +491,15 @@
     .section-categories-article__list{
         font-size: 16px;
     }
+
+    .section-detail-article__message .section-messages-service__stages {
+      
+        gap: 0px;
+        margin-bottom: 0px;
+    }
+    .section-detail-article__message .section-messages-service__stages h4:not(:nth-of-type(1)) {
+        margin-top: 20px;
+    }
 }
 
 @media (min-width:768px) and (max-width:991.98px) {
@@ -490,10 +511,10 @@
     .section-detail-article__desc h3:first-child{
         display:none ;
     }
-    .section-detail-article__mobile-title {
+    /* .section-detail-article__mobile-title {
         display: block;
         margin-bottom: 30px;
-    }
+    } */
     
     .section-company-about-desc {
         display: grid;
@@ -515,11 +536,11 @@
         gap: 90px;
         margin-bottom: 51px;
     }
-    .section-detail-article__desc h3:first-child {
+    /* .section-detail-article__desc h3:first-child {
         display: none;
-    }
-    .section-detail-article__mobile-title {
+    } */
+    /* .section-detail-article__mobile-title {
         display: block;
         margin-bottom: 30px;
-    }
+    } */
 }
