@@ -66,6 +66,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, calc(25% - 20px));
     gap: 20px;
+    justify-content: center;
 }
 
 .section-laboratory-row-item {
@@ -117,6 +118,9 @@
 
 .section-laboratory-pole {
     padding-bottom: 62px;
+}
+.section-laboratory__title{
+    text-align: center;
 }
 
 .section-laboratory-eco__title {
@@ -193,7 +197,7 @@
 .section-example {
     padding-bottom: 44px;
 }
-.section-example-fourth{
+.section-page-tz ~ :nth-last-child(2) {
     padding-bottom: 92px;
 }
 
@@ -301,7 +305,7 @@
     .section-example {
         padding-bottom: 35px;
     }
-    .section-example-fourth {
+    .section-page-tz ~ :nth-last-child(2) {
         padding-bottom: 80px;
     }
     .section-example-row-item .section-example-row-item__image {
