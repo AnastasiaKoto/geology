@@ -9,9 +9,23 @@ jQuery(document).ready(function ($) {
   });
 
   /*locataion */
-  $(".header-location").hover(function () {
+  $(".header-location__place").click(function (e) {
+   
+   
     $(".header-location__place").toggleClass("header-location__place_active");
+  
   });
+
+
+  $(document).click( function(e){ // событие клика по веб-документу
+		var div = $( ".header-location" ); // тут указываем ID элемента
+		if ( !div.is(e.target) // если клик был не по нашему блоку
+		    && div.has(e.target).length === 0  ) { // и не по его дочерним элементам
+          $(".header-location__place").removeClass("header-location__place_active");
+		}
+	});
+
+
 
   $(".mobile-menu-location__city").click(function () {
     $(this).toggleClass("mobile-menu-location__city_active");
@@ -445,7 +459,7 @@ jQuery(document).ready(function ($) {
   });
 
   /*mobile dropdown */
-  $(".mobile-menu__list > li > a").click(function(e){
+  $("#menu-menyu-uslug > li > a").click(function(e){
     e.preventDefault();
     $(this).parent("li").toggleClass("active");
     $(this).next(".sub-menu").toggleClass("sub-menu_active");
