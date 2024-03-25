@@ -96,7 +96,7 @@
 		<div class="container">
 			<div class="fotter-bottom__body">
 				<span>© 2015 - 2024 ООО "ГЕОЛОГ-КРАСНОДАР". Все права защищены.</span>
-				<a href="javascript:void(0)">Политика конфиденциальности </a>
+				<a href="/privacy-policy/">Политика конфиденциальности </a>
 			</div>
 		</div>
 	</div>

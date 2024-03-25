@@ -300,7 +300,7 @@ if($works_gallery) {
                 </div>
             </div>
             <div class="section-example-works__button">
-                <a class="site-btn-2 site-btn-2_eqiupment" href="javascript:void(0)">Смотреть все
+                <a class="site-btn-2 site-btn-2_eqiupment" href="/foto/">Смотреть все
                     работы</a>
             </div>
         </div>
