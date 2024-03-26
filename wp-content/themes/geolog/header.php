@@ -262,7 +262,7 @@
 											?>
 											</div>
 											<div>
-												<a href="javascript:void(0)" class="site-btn">Отправить заявку </a>
+												<a href="#modal-form" class="site-btn trigger-fancy">Отправить заявку </a>
 											</div>
 										</div>
 									</div>
