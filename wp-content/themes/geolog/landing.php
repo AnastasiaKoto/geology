@@ -219,7 +219,7 @@ get_header();
                                         <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($type_id)); ?>" alt="">
                                     </div>
                                     <div class="section-reseach-item__body">
-                                        <a href="javascript:void(0)" class="section-reseach-item__title">
+                                        <a href="<?php echo get_permalink($type_id); ?>" class="section-reseach-item__title">
                                             <?php echo $type->post_title; ?>
                                         </a>
                                         <div class="section-reseach-item__text">
