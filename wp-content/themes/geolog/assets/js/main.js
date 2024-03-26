@@ -586,4 +586,19 @@ jQuery(document).ready(function ($) {
      }
   });
 
+  //переход к городу
+
+  $("body").on("click",".town a",function(e){
+		e.preventDefault();
+		if($(this).data("town")){
+			window.location.href="https://"+$(this).data("town")+".geologie.loc";
+		} else {
+			window.location.href="http://geologie.loc";
+		}
+	})
+
+  $.get("/wp-content/themes/geolog/gettowns.php",function(data){
+		$(data).appendTo(".towns-list");
+	})
+
 });

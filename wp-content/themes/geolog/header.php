@@ -60,15 +60,7 @@
 								<path d="M1 1L5 5L9 1" stroke-width="2" stroke-linecap="round" />
 							</svg>
 						</div>
-						<div class="dropdown-menu dropdown-menu__location">
-							<ul class="dropdown-menu__list">
-								<li><a href="javascript:void(0)">Москва</a></li>
-								<li><a href="javascript:void(0)">Орел</a></li>
-								<li><a href="javascript:void(0)">Брянск</a></li>
-								<li><a href="javascript:void(0)">Казань</a></li>
-								<li><a href="javascript:void(0)">Краснодар</a></li>
-							</ul>
-						</div>
+						<div class="dropdown-menu dropdown-menu__location towns-list"></div>
 					</div>
 					<!--end location -->
 					<?php
