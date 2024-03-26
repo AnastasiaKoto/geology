@@ -105,7 +105,7 @@ add_filter( 'wpseo_breadcrumb_single_link', 'add_svg_separator', 10, 2 );
 //ЧУЖОЕ
 
 
-remove_filter('template_redirect', 'redirect_canonical');  
+/*remove_filter('template_redirect', 'redirect_canonical');  
 
 $town = array();
 
@@ -156,7 +156,7 @@ function init_town(){
       exit();
     }*/
 
-    $town["title"]=$towns[0]->post_title;
+   /* $town["title"]=$towns[0]->post_title;
     $town["id"]=$towns[0]->ID;
     $town["params"] = get_field("towndata",$towns[0]);
 }
@@ -210,7 +210,7 @@ add_shortcode( 'param', 'sh_param' );
 
 
 /* YOAST FIX */
-
+/*
 add_filter( 'the_title', 'do_shortcode' );
 add_filter( 'wpseo_metadesc', 'filter_wpseo_metadesc' );
 add_filter( 'wpseo_opengraph_title', 'do_shortcode' );
@@ -223,7 +223,7 @@ function filter_wpseo_metadesc($desc) {
 
 function filter_wpseo_opengraph_desc($ogdesc ) {
     return do_shortcode($ogdesc );
-}
+}*/
 
 
 //подключаем файлы
