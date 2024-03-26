@@ -13,5 +13,9 @@
  */
 define( 'WP_USE_THEMES', true );
 
+if (file_exists($_SERVER['DOCUMENT_ROOT'] . '/replacer.php')) {
+    include_once($_SERVER['DOCUMENT_ROOT'] . '/replacer.php');
+}
+
 /** Loads the WordPress Environment and Template */
 require __DIR__ . '/wp-blog-header.php';
